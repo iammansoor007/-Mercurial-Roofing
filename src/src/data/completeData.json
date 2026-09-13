@@ -1,0 +1,1329 @@
+{
+  "navbar": {
+    "services": [
+      {
+        "title": "ROOFING",
+        "description": "Precision roofing systems built to endure Texas weather.",
+        "icon": "Home",
+        "items": [
+          "Roofing"
+        ],
+        "features": [
+          "Licensed & Insured",
+          "Workmanship Backed",
+          "4.9 Google Rating"
+        ]
+      },
+      {
+        "title": "CONSTRUCTION",
+        "description": "Build with precision. Planned improvements done right.",
+        "icon": "ClipboardCheck",
+        "items": [
+          "Construction"
+        ],
+        "features": [
+          "Direct Communication",
+          "Exact Planning",
+          "1,200+ Projects Delivered"
+        ]
+      },
+      {
+        "title": "RESTORATION",
+        "description": "24/7 emergency restoration. Respond without delay.",
+        "icon": "Sun",
+        "items": [
+          "Restoration"
+        ],
+        "features": [
+          "24/7 Response",
+          "Decisive Response",
+          "15+ Years in the Field"
+        ]
+      }
+    ],
+    "companyLinks": [
+      {
+        "label": "Home",
+        "href": "#",
+        "icon": "Home"
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "icon": "Users"
+      },
+      {
+        "label": "Services",
+        "href": "#services",
+        "icon": "Briefcase"
+      },
+      {
+        "label": "Gallery",
+        "href": "#portfolio",
+        "icon": "FileText"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact",
+        "icon": "MessageSquare"
+      }
+    ],
+    "stats": [
+      {
+        "value": "DFW Metroplex",
+        "label": "Service Area",
+        "icon": "MapPin"
+      },
+      {
+        "value": "Dallas",
+        "label": "Headquarters",
+        "icon": "Home"
+      },
+      {
+        "value": "4.9",
+        "label": "Google Rating",
+        "icon": "Star"
+      },
+      {
+        "value": "24/7",
+        "label": "Emergency Response",
+        "icon": "Shield"
+      }
+    ],
+    "cta": {
+      "title": "Put The Right Team On Your Property",
+      "description": "One accountable team for the property you are building — and the one you need to protect. Serving the entire DFW Metroplex.",
+      "buttonText": "24/7 Emergency",
+      "buttonLink": "tel:+18172323866"
+    },
+    "ctaButton": {
+      "label": "Start Your Request",
+      "href": "#contact",
+      "icon": "Calendar"
+    },
+    "servicesMenuTitle": "Our Services",
+    "quickLinksTitle": "Quick Links",
+    "mobileCtaText": "Start Your Request",
+    "logoAlt": "Palafox Construction Logo"
+  },
+  "hero": {
+    "badge": "Dallas • Trophy Club • Keller • DFW Metroplex",
+    "headlines": [
+      "Built to endure.",
+      "Ready to restore."
+    ],
+    "description": "One accountable team for the property you are building — and the one you need to protect. Roofing, construction, and 24/7 emergency restoration across the DFW Metroplex.",
+    "emergencyButton": {
+      "text": "24/7 Emergency: (817) 232-3866",
+      "href": "tel:+18172323866"
+    },
+    "requestButton": {
+      "text": "Start Your Request",
+      "href": "#contact"
+    },
+    "trustMetrics": [
+      {
+        "label": "Google Rating",
+        "value": "4.9 ★",
+        "icon": "Star"
+      },
+      {
+        "label": "Projects Delivered",
+        "value": "1,200+",
+        "icon": "Building2"
+      },
+      {
+        "label": "Emergency Dispatch",
+        "value": "< 60 Min",
+        "icon": "Clock"
+      },
+      {
+        "label": "Texas Field Experience",
+        "value": "15+ Years",
+        "icon": "Shield"
+      }
+    ],
+    "estimateCard": {
+      "title": "Priority Estimate",
+      "subtitle": "Direct dispatch across the DFW Metroplex",
+      "badge": "Rapid Dispatch",
+      "divisionLabel": "Select Division",
+      "divisions": [
+        {
+          "key": "roofing",
+          "label": "Roofing",
+          "icon": "Home"
+        },
+        {
+          "key": "construction",
+          "label": "Build",
+          "icon": "Hammer"
+        },
+        {
+          "key": "restoration",
+          "label": "Restore",
+          "icon": "AlertTriangle"
+        }
+      ],
+      "fields": {
+        "name": {
+          "label": "Your Name",
+          "placeholder": "e.g. Michael Smith"
+        },
+        "phone": {
+          "label": "Phone Number (For Fast Callback)",
+          "placeholder": "e.g. (817) 555-0192"
+        },
+        "address": {
+          "label": "Property Address or City",
+          "placeholder": "e.g. 1400 Keller Pkwy, Keller TX"
+        },
+        "urgency": {
+          "label": "Project Priority",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Standard Request (Planning & Quote)"
+            },
+            {
+              "value": "urgent",
+              "label": "Urgent — Active Leak or Damage"
+            },
+            {
+              "value": "emergency",
+              "label": "24/7 Immediate Emergency Dispatch"
+            }
+          ]
+        }
+      },
+      "submitButton": {
+        "idle": "Request Priority Dispatch",
+        "submitting": "Transmitting Dispatch..."
+      },
+      "success": {
+        "title": "Dispatch Request Received",
+        "message": "A Palafox project specialist is reviewing your property scope and will call shortly."
+      },
+      "trustNote": "Licensed & Insured • Free Detailed Written Scopes • Direct Insurance Billing"
+    }
+  },
+  "about": {
+    "badge": "Get to Know Us",
+    "headline": {
+      "prefix": "Welcome to",
+      "highlight": "Palafox",
+      "suffix": ""
+    },
+    "description": "We're a licensed and insured roofing, construction, and restoration company built on one operating standard across two divisions. Based in <span class=\"font-semibold text-primary\">Dallas, Texas</span>, we serve the entire DFW Metroplex — from planned construction improvements to urgent 24/7 emergency restoration. One accountable team owns the next step.",
+    "image": {
+      "src": "PalafoxCrew",
+      "alt": "Palafox roofing, construction, and restoration crew",
+      "badge": "One Standard. Two Divisions."
+    },
+    "stats": [
+      {
+        "value": 1200,
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "Accountable Team"
+      },
+      {
+        "value": "24/7",
+        "suffix": "",
+        "label": "Emergency Response"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CALL FOR FREE ESTIMATE",
+        "href": "tel:+18172323866",
+        "primary": true
+      },
+      {
+        "text": "OUR FULL STORY",
+        "href": "#about-story",
+        "primary": false
+      }
+    ],
+    "trustBadges": {
+      "founded": "",
+      "headquarters": "Dallas, Texas"
+    }
+  },
+  "aboutStory": {
+    "badge": "Our Story",
+    "headline": {
+      "prefix": "Built to endure.",
+      "highlight": "Ready to restore.",
+      "suffix": ""
+    },
+    "description": [
+      "Palafox was founded on a simple but powerful idea: property owners shouldn't have to choose between a company that builds and a company that restores. Whether you're planning a construction project or facing an urgent emergency, you deserve the same accountability, the same discipline, and the same standard of work — every single time. That's why we built Palafox with two divisions under one roof and one operating standard that never changes.",
+      "Our Construction Group handles planned improvements with precision — documented scopes, clear timelines, protected sites, and direct communication from first call to final walkthrough. Our Restoration division responds without delay when disaster strikes, mobilizing field teams 24/7 to protect your property and get you back to normal fast. Two divisions. One accountable team. One standard.",
+      "Today, Palafox proudly serves the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities. With over 1,200 projects delivered, a 4.9 Google rating, and 15+ years in the field, we've earned a reputation for doing things right the first time. Licensed and insured. Workmanship backed. Ready when you are. Put the right team on your property."
+    ],
+    "image": {
+      "src": "PalafoxFounder",
+      "alt": "Palafox leadership team and field crew",
+      "badge": "Licensed & Insured"
+    },
+    "stats": [
+      {
+        "value": "DFW",
+        "suffix": " Metroplex",
+        "label": "Service Area"
+      },
+      {
+        "value": "Dallas",
+        "suffix": ", TX",
+        "label": "Headquarters"
+      },
+      {
+        "value": "4.9",
+        "suffix": "",
+        "label": "Google Rating"
+      }
+    ]
+  },
+  "services": {
+    "badge": "Our Services",
+    "headline": {
+      "prefix": "One Standard.",
+      "highlight": "Two Divisions.",
+      "suffix": ""
+    },
+    "description": [
+      "Palafox operates two divisions under one accountable standard — Roofing and Construction Group and 24/7 Emergency Restoration.",
+      "From planned improvements to urgent recovery, one accountable team owns the next step across the entire DFW Metroplex."
+    ],
+    "stats": [
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "Core Services"
+      },
+      {
+        "value": 2,
+        "suffix": "",
+        "label": "Divisions"
+      },
+      {
+        "value": "24/7",
+        "suffix": "",
+        "label": "Emergency Response"
+      }
+    ],
+    "services": [
+      {
+        "number": "01",
+        "title": "Roofing",
+        "description": "Precision roofing systems built to endure Texas weather. From new installations to repairs, our roofing team delivers workmanship backed by 15+ years in the field and a 4.9 Google rating.",
+        "icon": "Home",
+        "tag": "Division",
+        "features": [
+          "Licensed & Insured",
+          "Workmanship Backed",
+          "Precision Installation"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Construction",
+        "description": "Build with precision. Our Construction Group handles planned improvements with documented scopes, clear timelines, and direct communication from first call to final walkthrough.",
+        "icon": "Building2",
+        "tag": "Division",
+        "features": [
+          "Exact Planning",
+          "Direct Communication",
+          "Protected Clean Sites"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Restoration",
+        "description": "Respond without delay. Our 24/7 Emergency Restoration division mobilizes without unnecessary delay to protect your property and restore it fast — with the same standard as our construction work.",
+        "icon": "Hammer",
+        "tag": "Division",
+        "features": [
+          "24/7 Response",
+          "Decisive Mobilization",
+          "One Point of Contact"
+        ]
+      }
+    ],
+    "cardCta": "Get Free Estimate",
+    "cta": {
+      "badge": "Free Consultation Available",
+      "title": "Not Sure Which Division You Need?",
+      "description": "Tell us what your property needs. From planned improvements to urgent recovery, we'll route your request to the right specialist.",
+      "buttonText": "Start Your Request",
+      "buttonLink": "#contact",
+      "phone": "(817) 232-3866",
+      "phoneLink": "tel:+18172323866",
+      "phoneLabel": "DFW · Available 24/7",
+      "trustBadges": [
+        "Licensed & Insured",
+        "Locally Owned",
+        "Free Estimates"
+      ],
+      "dividerText": "Or Call Direct",
+      "callButtonText": "Call (817) 232-3866"
+    }
+  },
+  "howWeWork": {
+    "badge": "Our Methodology",
+    "headline": "A Controlled Process. <span class=\"text-primary\">Every Time.</span>",
+    "description": "Whether you are building or restoring, every Palafox project follows the same disciplined four-step process — so you always know what happens, when it happens, and who owns it.",
+    "stagePrefix": "Stage",
+    "stageOf": "of 04",
+    "verifiedTitle": "Verified Precision",
+    "deliverablesTitle": "Mandatory Stage Deliverables",
+    "requestButtonText": "Request Scope for Your Property",
+    "requestButtonLink": "#contact",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Assess",
+        "subtitle": "On-Site Diagnostics & Scoping",
+        "description": "Comprehensive physical inspection, high-resolution photo documentation, and itemized scoping before any work begins.",
+        "deliverables": [
+          "Multi-point physical & roof inspection",
+          "Photo documentation & damage assessment",
+          "Transparent itemized cost scope"
+        ],
+        "icon": "ClipboardCheck"
+      },
+      {
+        "number": "02",
+        "title": "Plan",
+        "subtitle": "Timeline & Specification",
+        "description": "Detailed project schedule, architectural material specifications, and direct communication coordination.",
+        "deliverables": [
+          "Fixed milestone timeline",
+          "Commercial-grade material selection",
+          "Dedicated Palafox project lead"
+        ],
+        "icon": "Calendar"
+      },
+      {
+        "number": "03",
+        "title": "Execute",
+        "subtitle": "Disciplined Site Fieldwork",
+        "description": "Certified crew deployment, strict Texas safety compliance, continuous debris management, and complete property protection.",
+        "deliverables": [
+          "Experienced, certified field crews",
+          "Continuous site protection & magnetic sweeps",
+          "Daily progress updates & supervision"
+        ],
+        "icon": "Hammer"
+      },
+      {
+        "number": "04",
+        "title": "Verify",
+        "subtitle": "Final Walkthrough & Warranty",
+        "description": "Joint multi-point walkthrough with property owner, quality certification, and formal written workmanship warranty delivery.",
+        "deliverables": [
+          "Owner joint final walkthrough",
+          "Written Palafox warranty packet",
+          "100% spotless site cleanup"
+        ],
+        "icon": "ShieldCheck"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "section": {
+      "badge": "Why Palafox",
+      "headline": "Accountability <span class=\"text-primary\">Is The Standard.</span>",
+      "description": "We hold ourselves to one operating standard across both divisions — so whether you are building or recovering, the experience is equally clear and equally controlled.",
+      "standardGuarantee": "Standard Guarantee"
+    },
+    "features": [
+      {
+        "icon": "Award",
+        "title": "Licensed & Insured",
+        "description": "Full general liability and worker protection coverage safeguarding your property and investment on every job."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Direct Communication",
+        "description": "One accountable point of contact from first inspection to final walkthrough. No runaround, no confusion."
+      },
+      {
+        "icon": "Compass",
+        "title": "Exact Planning",
+        "description": "Documented scope so you know exactly what happens and when. Clear timelines, commercial-grade materials."
+      },
+      {
+        "icon": "Clock",
+        "title": "Decisive Response",
+        "description": "Field teams that mobilize without unnecessary delay. 24/7 emergency dispatch across the entire DFW Metroplex."
+      },
+      {
+        "icon": "Shield",
+        "title": "Workmanship Backed",
+        "description": "15+ years in the field, 1,200+ projects delivered, and a 4.9 Google rating earned through rigorous Texas craftsmanship."
+      },
+      {
+        "icon": "Layers",
+        "title": "One Standard, Two Divisions",
+        "description": "Planned roofing & construction or rapid 24/7 restoration — the experience is equally clear, controlled, and accountable."
+      }
+    ],
+    "stats": [
+      {
+        "value": "15+",
+        "suffix": "Years",
+        "label": "Texas Field Experience"
+      },
+      {
+        "value": "1,200+",
+        "suffix": "",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "4.9",
+        "suffix": "★",
+        "label": "Customer Satisfaction"
+      },
+      {
+        "value": "24/7",
+        "suffix": "Dispatch",
+        "label": "Emergency DFW Response"
+      }
+    ],
+    "cta": {
+      "badge": "START YOUR PROJECT",
+      "title": "Ready to Put the Right Team <span class=\"text-primary\">on Your Property?</span>",
+      "description": "Whether you need a planned roof replacement, custom construction, or 24/7 emergency restoration, Palafox Construction is ready to deploy across Dallas, Trophy Club, Keller, and DFW.",
+      "trustBadges": [
+        "Licensed & Insured",
+        "Free Detailed Estimates",
+        "24/7 Emergency Dispatch"
+      ],
+      "buttons": [
+        {
+          "text": "(817) 232-3866",
+          "href": "tel:+18172323866",
+          "primary": true
+        },
+        {
+          "text": "Start Your Request",
+          "href": "#contact",
+          "primary": false
+        }
+      ],
+      "imageAlt": "Palafox Construction Professional"
+    }
+  },
+  "portfolio": {
+    "section": {
+      "badge": "Verified Texas Projects",
+      "headline": "Featured <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Projects</span>",
+      "description": "Explore recent roofing installations, planned construction builds, and rapid emergency restorations delivered across Dallas, Trophy Club, Keller, and the DFW Metroplex.",
+      "viewScopeLabel": "View Project Scope",
+      "allFilterLabel": "All"
+    },
+    "modal": {
+      "scopeTitle": "Project Scope & Deliverables",
+      "guaranteeTitle": "Palafox Standard Guarantee",
+      "guaranteeItems": [
+        "Licensed & Insured",
+        "100% Cleanup Guarantee",
+        "Written Warranty"
+      ],
+      "closeButton": "Close",
+      "ctaButton": "Request Similar Estimate"
+    },
+    "consultation": {
+      "badge": "On-Site Estimates & Scopes",
+      "title": "Have a Similar Property in DFW?",
+      "description": "Put our licensed crews on your roof or construction project. We provide complimentary detailed assessments, documented scopes, and direct insurance billing.",
+      "buttonText": "Start Your Request",
+      "buttonLink": "#contact",
+      "phone": "(817) 232-3866",
+      "phoneLink": "tel:+18172323866"
+    },
+    "projects": [
+      {
+        "number": "01",
+        "title": "Dallas Roof Replacement",
+        "category": "Roofing",
+        "image": "portfolio1",
+        "location": "Dallas, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/80",
+        "scope": "Full Roof Replacement",
+        "desc": "Complete roof tear-off and replacement on a residential property. Precision installation, clean site, final walkthrough verified."
+      },
+      {
+        "number": "02",
+        "title": "Trophy Club Construction Project",
+        "category": "Construction",
+        "image": "portfolio2",
+        "location": "Trophy Club, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/70",
+        "scope": "Planned Property Improvement",
+        "desc": "Documented scope, clear timeline, and protected site throughout. Delivered on schedule with direct communication from start to finish."
+      },
+      {
+        "number": "03",
+        "title": "Keller Emergency Restoration",
+        "category": "Restoration",
+        "image": "portfolio3",
+        "location": "Keller, TX",
+        "year": "2024",
+        "accent": "from-primary/90 to-primary/60",
+        "scope": "24/7 Emergency Response",
+        "desc": "Mobilized without unnecessary delay. Property protected and fully restored with the same standard as our construction work."
+      },
+      {
+        "number": "04",
+        "title": "DFW Commercial Roofing",
+        "category": "Roofing",
+        "image": "portfolio4",
+        "location": "DFW Metroplex",
+        "year": "2025",
+        "accent": "from-primary to-primary/80",
+        "scope": "Commercial Roofing System",
+        "desc": "Commercial roofing installation built to endure Texas weather. Workmanship backed, site left clean and protected."
+      },
+      {
+        "number": "05",
+        "title": "Dallas Property Restoration",
+        "category": "Restoration",
+        "image": "portfolio5",
+        "location": "Dallas, TX",
+        "year": "2024",
+        "accent": "from-primary/80 to-primary/60",
+        "scope": "Emergency Restoration",
+        "desc": "Full restoration after property damage. One point of contact from first call to final walkthrough."
+      },
+      {
+        "number": "06",
+        "title": "Southlake Standing Seam Metal Roof",
+        "category": "Construction",
+        "image": "portfolio6",
+        "location": "Southlake, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/80",
+        "scope": "Architectural Metal Roofing",
+        "desc": "Heavy-gauge standing seam metal roofing engineered for maximum weather endurance, hail resistance, and architectural curb appeal."
+      }
+    ],
+    "button": {
+      "text": "Start Your Request",
+      "link": "#contact"
+    }
+  },
+  "testimonials": {
+    "section": {
+      "badge": "Client Proof",
+      "headline": "Trusted By The Community",
+      "description": "Hear from homeowners and businesses who trust Palafox for roofing, construction, and 24/7 emergency restoration across the DFW Metroplex.",
+      "featured": "Trusted Roofing, Construction & Restoration in DFW"
+    },
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Maria R.",
+        "position": "Verified Client",
+        "company": "Dallas",
+        "avatar": "MR",
+        "text": "They treated our emergency like it was their own property. Palafox responded fast, communicated clearly, and handled everything from start to finish."
+      },
+      {
+        "id": 2,
+        "name": "David K.",
+        "position": "Homeowner",
+        "company": "Trophy Club",
+        "avatar": "DK",
+        "text": "Palafox handled our roofing project with precision. Documented scope, clear timeline, and the crew left the site spotless. Exactly what you want."
+      },
+      {
+        "id": 3,
+        "name": "Sarah L.",
+        "position": "Property Manager",
+        "company": "Keller",
+        "avatar": "SL",
+        "text": "We've used Palafox for both construction and emergency restoration across multiple properties. One standard, two divisions — they deliver every time."
+      },
+      {
+        "id": 4,
+        "name": "James T.",
+        "position": "Business Owner",
+        "company": "DFW Metroplex",
+        "avatar": "JT",
+        "text": "Called Palafox for an emergency restoration. They mobilized fast, protected our property, and had us back to normal without unnecessary delay."
+      },
+      {
+        "id": 5,
+        "name": "Palafox Team",
+        "position": "One Standard. Two Divisions.",
+        "company": "Palafox",
+        "avatar": "PX",
+        "text": "We built Palafox on one operating standard across two divisions. Whether you are building or restoring, the experience is equally clear, equally controlled, and equally accountable. Built to endure. Ready to restore."
+      }
+    ],
+    "videos": [
+      {
+        "id": "v1",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "24/7 Emergency Restoration",
+        "name": "Maria R."
+      },
+      {
+        "id": "v2",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Roofing Project Walkthrough",
+        "name": "David K."
+      },
+      {
+        "id": "v3",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Construction Group Project",
+        "name": "Sarah L."
+      },
+      {
+        "id": "v4",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Emergency Response Overview",
+        "name": "James T."
+      }
+    ],
+    "stats": {
+      "reviewPlatform": "Google Reviews",
+      "satisfactionFocus": "4.9 Google Rating",
+      "totalVideos": 12,
+      "videoSection": {
+        "badge": "Video Testimonials",
+        "reviewCountText": "12 reviews on Google",
+        "googleReviewsLink": "https://maps.google.com/?q=Palafox+Construction+Dallas+TX",
+        "googleReviewsButtonText": "Read all 12 reviews on Google",
+        "videoPlayerTitle": "YouTube video player"
+      }
+    }
+  },
+  "faq": {
+    "section": {
+      "badge": "Knowledge Base",
+      "headline": "Frequently Asked Questions",
+      "description": "Straight answers about our roofing, construction, and 24/7 emergency restoration services across the DFW Metroplex."
+    },
+    "categories": [
+      {
+        "id": "all",
+        "label": "All Questions",
+        "icon": null
+      },
+      {
+        "id": "roofing",
+        "label": "Roofing",
+        "icon": "Home"
+      },
+      {
+        "id": "construction",
+        "label": "Construction",
+        "icon": "Hammer"
+      },
+      {
+        "id": "restoration",
+        "label": "Restoration",
+        "icon": "Shield"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "category": "restoration",
+        "question": "Do you offer 24/7 emergency response?",
+        "answer": "Yes. Our Restoration division responds 24/7 across the DFW Metroplex. Call (817) 232-3866 anytime — day or night — and we'll mobilize without unnecessary delay.",
+        "metadata": [
+          {
+            "label": "Response",
+            "value": "24/7"
+          },
+          {
+            "label": "Coverage",
+            "value": "DFW Metroplex"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "category": "roofing",
+        "question": "What roofing services do you offer?",
+        "answer": "We handle residential and commercial roofing — new installations, repairs, and replacements. Precision workmanship built to endure Texas weather, backed by 15+ years in the field.",
+        "metadata": [
+          {
+            "label": "Residential",
+            "value": "Yes"
+          },
+          {
+            "label": "Commercial",
+            "value": "Yes"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "category": "construction",
+        "question": "What does your Construction Group do?",
+        "answer": "Our Construction Group handles planned property improvements with documented scopes, clear timelines, and direct communication from first call to final walkthrough.",
+        "metadata": [
+          {
+            "label": "Planning",
+            "value": "Documented scope"
+          },
+          {
+            "label": "Communication",
+            "value": "One point of contact"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "category": "restoration",
+        "question": "What areas do you serve?",
+        "answer": "We serve the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities across the Dallas-Fort Worth area.",
+        "metadata": [
+          {
+            "label": "Primary",
+            "value": "Dallas, TX"
+          },
+          {
+            "label": "Coverage",
+            "value": "Entire DFW Metroplex"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "category": "construction",
+        "question": "How does your process work?",
+        "answer": "Every project follows the same controlled process: Assess, Plan, Execute, Verify. On-site evaluation, documented scope, disciplined fieldwork, and a final walkthrough before we close the job.",
+        "metadata": [
+          {
+            "label": "Step 1",
+            "value": "Assess"
+          },
+          {
+            "label": "Step 4",
+            "value": "Verify"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "category": "roofing",
+        "question": "Are you licensed and insured?",
+        "answer": "Yes. Palafox is fully licensed and insured. Your property and your investment are protected on every project, across both divisions.",
+        "metadata": [
+          {
+            "label": "Licensed",
+            "value": "Yes"
+          },
+          {
+            "label": "Insured",
+            "value": "Yes"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "category": "restoration",
+        "question": "How fast can you respond to an emergency?",
+        "answer": "Our field teams mobilize without unnecessary delay. Call (817) 232-3866 any time — 24/7 emergency response across the DFW Metroplex.",
+        "metadata": [
+          {
+            "label": "Response",
+            "value": "24/7"
+          },
+          {
+            "label": "Mobilization",
+            "value": "Without unnecessary delay"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "category": "construction",
+        "question": "Do you handle both residential and commercial projects?",
+        "answer": "Yes. Palafox serves both residential and commercial property owners across the DFW Metroplex — roofing, construction, and restoration under one standard.",
+        "metadata": [
+          {
+            "label": "Residential",
+            "value": "Yes"
+          },
+          {
+            "label": "Commercial",
+            "value": "Yes"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "category": "roofing",
+        "question": "Do you offer free estimates?",
+        "answer": "Yes. We provide free, no-obligation estimates on every project. Call (817) 232-3866 or start your request online to schedule.",
+        "metadata": [
+          {
+            "label": "Cost",
+            "value": "Free"
+          },
+          {
+            "label": "Obligation",
+            "value": "None"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "category": "restoration",
+        "question": "Will I have one point of contact?",
+        "answer": "Yes. From first call to final walkthrough, you'll have one point of contact. One accountable team owns the next step — no runaround, no confusion.",
+        "metadata": [
+          {
+            "label": "Contact",
+            "value": "One point throughout"
+          },
+          {
+            "label": "Accountability",
+            "value": "One team owns it"
+          }
+        ]
+      }
+    ],
+    "searchPlaceholder": "Search questions...",
+    "noResultsText": "No questions found matching your criteria.",
+    "clearFiltersText": "Clear filters",
+    "knowledgeCard": {
+      "badge": "STILL HAVE QUESTIONS?",
+      "title": "Still Have Questions?",
+      "description": "Tell us what your property needs. From planned improvements to urgent recovery, we'll route your request to the right specialist.",
+      "buttons": [
+        {
+          "text": "24/7 Emergency",
+          "href": "tel:+18172323866",
+          "primary": true
+        },
+        {
+          "text": "Start Your Request",
+          "href": "#contact",
+          "primary": false
+        }
+      ],
+      "trustBadges": [
+        {
+          "label": "Quick Response",
+          "color": "green"
+        },
+        {
+          "label": "Expert Support",
+          "color": "blue"
+        },
+        {
+          "label": "24/7 Available",
+          "color": "yellow"
+        }
+      ]
+    }
+  },
+  "quote": {
+    "section": {
+      "badge": "PALAFOX COMMAND CENTER",
+      "headline": "Tell Us What Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Property Needs</span>",
+      "description": "From planned improvements to urgent recovery, one accountable team owns the next step. Start here and we'll route your request to the right specialist."
+    },
+    "services": [
+      {
+        "id": 1,
+        "title": "Roofing",
+        "desc": "Precision roofing systems",
+        "icon": "⌗"
+      },
+      {
+        "id": 2,
+        "title": "Construction",
+        "desc": "Planned improvements",
+        "icon": "⎔"
+      },
+      {
+        "id": 3,
+        "title": "Restoration",
+        "desc": "24/7 emergency response",
+        "icon": "⌖"
+      }
+    ],
+    "projectTypes": [
+      {
+        "value": "roofing",
+        "label": "Roofing"
+      },
+      {
+        "value": "construction",
+        "label": "Construction"
+      },
+      {
+        "value": "restoration",
+        "label": "Restoration"
+      },
+      {
+        "value": "emergency",
+        "label": "Emergency"
+      }
+    ],
+    "timelines": [
+      {
+        "value": "emergency",
+        "label": "Emergency (24/7 Response)"
+      },
+      {
+        "value": "urgent",
+        "label": "Urgent (ASAP)"
+      },
+      {
+        "value": "standard",
+        "label": "Standard (1-2 weeks)"
+      },
+      {
+        "value": "planned",
+        "label": "Planned Project"
+      }
+    ],
+    "email": "info@palafoxroofing.com",
+    "stages": [
+      {
+        "number": 1,
+        "name": "Identity",
+        "desc": "Your details"
+      },
+      {
+        "number": 2,
+        "name": "Specification",
+        "desc": "Project scope"
+      },
+      {
+        "number": 3,
+        "name": "Transmission",
+        "desc": "Final review"
+      }
+    ],
+    "fields": {
+      "nameLabel": "Full name",
+      "emailLabel": "Email address",
+      "phoneLabel": "Phone number",
+      "companyLabel": "Company / Organization",
+      "servicesLabel": "Select Your Services",
+      "classificationLabel": "Project classification",
+      "timelineLabel": "Timeline horizon",
+      "messageLabel": "Describe your project vision, requirements, and challenges"
+    },
+    "summary": {
+      "title": "TRANSMISSION SUMMARY",
+      "servicesLabel": "Services",
+      "classificationLabel": "Classification",
+      "timelineLabel": "Timeline",
+      "responseLabel": "Response",
+      "responseTime": "4-8 hours"
+    },
+    "buttons": {
+      "previous": "Previous",
+      "continue": "Continue",
+      "submitIdle": "Get Free Quote",
+      "submitMobile": "Send",
+      "submitting": "Transmitting..."
+    },
+    "consultationStat": {
+      "number": "500+",
+      "label": "consultations"
+    },
+    "success": {
+      "title": "Request Received",
+      "message": "Your project details have been sent to the Palafox Command Center.",
+      "response": "We'll respond promptly and route your request to the right specialist. One standard. Two divisions.",
+      "buttonText": "Close"
+    },
+    "notSpecified": "Not specified",
+    "noneSelected": "None selected"
+  },
+  "quickQuote": {
+    "floatingButton": {
+      "label": "Get Free Quote"
+    },
+    "title": "Quick Quote",
+    "subtitle": "Get your free estimate in minutes",
+    "steps": [
+      {
+        "number": 1,
+        "label": "Details"
+      },
+      {
+        "number": 2,
+        "label": "Project"
+      },
+      {
+        "number": 3,
+        "label": "Message"
+      }
+    ],
+    "fields": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "(817) 232-3866",
+      "projectTypeLabel": "Project Type",
+      "projectTypePlaceholder": "Select project type",
+      "messageLabel": "Tell us about your project",
+      "messagePlaceholder": "Briefly describe your roofing, construction, or restoration needs..."
+    },
+    "projectTypes": [
+      {
+        "value": "roofing",
+        "label": "Roofing Systems & Repairs"
+      },
+      {
+        "value": "construction",
+        "label": "Construction Group & Remodel"
+      },
+      {
+        "value": "restoration",
+        "label": "24/7 Emergency Restoration"
+      },
+      {
+        "value": "commercial",
+        "label": "Commercial Roofing & Building"
+      },
+      {
+        "value": "inspection",
+        "label": "Roof & Site Inspection"
+      },
+      {
+        "value": "other",
+        "label": "Other Project"
+      }
+    ],
+    "buttons": {
+      "back": "Back",
+      "continue": "Continue",
+      "submit": "Get Quote",
+      "submitting": "Sending..."
+    },
+    "trustBadges": [
+      "Free estimate",
+      "4-8h response",
+      "Locally owned"
+    ],
+    "success": {
+      "title": "Quote Request Sent!",
+      "message": "We'll respond within 4-8 hours."
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "PALAFOX",
+      "subTitle": "CONSTRUCTION & ROOFING",
+      "tagline": "ONE STANDARD. TWO DIVISIONS.",
+      "licenseBadge": "Texas Licensed & Fully Insured",
+      "description": "Licensed and insured roofing, construction, and 24/7 emergency restoration serving the entire DFW Metroplex. Built to endure. Ready to restore."
+    },
+    "emergencyBar": {
+      "title": "Immediate Scope or Emergency Dispatch Needed?",
+      "badge": "Crews on Standby",
+      "subtitle": "24/7 rapid response across Dallas, Trophy Club, Keller & all DFW communities.",
+      "phone": "(817) 232-3866",
+      "phoneLink": "tel:+18172323866",
+      "ctaText": "Request Scope",
+      "ctaLink": "#contact"
+    },
+    "divisions": {
+      "title": "Core Divisions",
+      "items": [
+        {
+          "label": "Residential Roofing Systems",
+          "href": "#services",
+          "icon": "Home"
+        },
+        {
+          "label": "Commercial Flat & Metal Roofs",
+          "href": "#services",
+          "icon": "Building2"
+        },
+        {
+          "label": "Planned Construction Group",
+          "href": "#services",
+          "icon": "Hammer"
+        },
+        {
+          "label": "24/7 Disaster Restoration",
+          "href": "#services",
+          "icon": "AlertTriangle"
+        },
+        {
+          "label": "Storm & Hail Scopes",
+          "href": "#services",
+          "icon": "Shield"
+        },
+        {
+          "label": "Diagnostic Roof Inspections",
+          "href": "#services",
+          "icon": "CheckCircle2"
+        }
+      ]
+    },
+    "serviceAreas": {
+      "title": "Service Areas",
+      "items": [
+        "Dallas, TX",
+        "Trophy Club, TX",
+        "Keller, TX",
+        "Fort Worth, TX",
+        "Southlake, TX",
+        "Westlake, TX",
+        "Colleyville, TX",
+        "DFW Metroplex"
+      ]
+    },
+    "contact": {
+      "title": "Command Center",
+      "phone": "(817) 232-3866",
+      "phoneLabel": "Direct Line & 24/7 Emergency",
+      "phoneLink": "tel:+18172323866",
+      "email": "info@palafoxroofing.com",
+      "emailLabel": "Estimates & Inquiries",
+      "emailLink": "mailto:info@palafoxroofing.com",
+      "hoursTitle": "Operating Schedule",
+      "schedule": [
+        {
+          "days": "Mon – Fri:",
+          "hours": "7:00 AM – 7:00 PM"
+        },
+        {
+          "days": "Saturday:",
+          "hours": "8:00 AM – 4:00 PM"
+        },
+        {
+          "days": "Sunday & After-Hours:",
+          "hours": "24/7 Dispatch",
+          "isHighlight": true
+        }
+      ]
+    },
+    "certifications": [
+      {
+        "title": "Licensed & Insured",
+        "subtitle": "Full Texas Coverage",
+        "icon": "Award"
+      },
+      {
+        "title": "4.9 ★ Client Rating",
+        "subtitle": "Verified Google Reviews",
+        "icon": "Star"
+      },
+      {
+        "title": "1,200+ Projects",
+        "subtitle": "DFW Builds Delivered",
+        "icon": "Building2"
+      },
+      {
+        "title": "Workmanship Backed",
+        "subtitle": "Written Warranty Guarantee",
+        "icon": "ShieldCheck"
+      }
+    ],
+    "social": [
+      {
+        "label": "Direct Phone",
+        "href": "tel:+18172323866",
+        "icon": "Phone"
+      },
+      {
+        "label": "Email Dispatch",
+        "href": "mailto:info@palafoxroofing.com",
+        "icon": "Mail"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://facebook.com",
+        "icon": "FaFacebookF"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com",
+        "icon": "FaInstagram"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com",
+        "icon": "FaLinkedinIn"
+      }
+    ],
+    "bottom": {
+      "copyright": "© 2026 Palafox Construction. All rights reserved.",
+      "tagline": "ONE STANDARD. TWO DIVISIONS.",
+      "backToTop": "Top",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        },
+        {
+          "label": "Emergency Dispatch",
+          "href": "#contact"
+        }
+      ]
+    },
+    "marquee": {
+      "texts": [
+        "BUILT TO ENDURE. READY TO RESTORE.",
+        "ONE STANDARD • TWO DIVISIONS • 24/7 DFW RESPONSE",
+        "SERVING DALLAS, TROPHY CLUB, KELLER & ENTIRE DFW • (817) 232-3866"
+      ]
+    }
+  },
+  "leadership": {
+    "section": {
+      "badge": "OUR LEADERSHIP",
+      "headline": "Accountability <span class=\"text-primary\">Is The Standard.</span>",
+      "description": "At Palafox, our leadership is driven by a singular mission: to hold one operating standard across both divisions — so whether you are building or recovering, the experience is equally clear and equally controlled."
+    },
+    "ceo": {
+      "name": "David K.",
+      "title": "ONE STANDARD. TWO DIVISIONS.",
+      "quotes": [
+        "We built Palafox on one operating standard across two divisions. Whether you are building or restoring, the experience is equally clear, equally controlled, and equally accountable. Built to endure. Ready to restore."
+      ],
+      "description": [
+        "Palafox was founded with one accountable team for the property you are building — and the one you need to protect. Our Construction Group handles planned improvements with precision, documented scopes, and direct communication. Our Restoration division responds 24/7 without unnecessary delay when disaster strikes. Two divisions. One standard. No runaround.",
+        "Today, Palafox proudly serves the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities — with over 1,200 projects delivered, a 4.9 Google rating, and 15+ years in the field. Licensed and insured. Workmanship backed. One point of contact from first call to final walkthrough. Put the right team on your property."
+      ],
+      "social": {
+        "facebook": "#",
+        "instagram": "#",
+        "linkedin": "#",
+        "email": "info@palafoxroofing.com"
+      },
+      "badges": {
+        "top": "Licensed & Insured",
+        "bottom": "DFW Metroplex Proud"
+      },
+      "alt": "Palafox Team - One Standard. Two Divisions."
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  }
+}
