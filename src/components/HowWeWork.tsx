@@ -299,7 +299,7 @@ const HowWeWork = () => {
     <section
       id="how-we-work"
       className="relative bg-background py-20 md:py-24 lg:py-28 overflow-hidden"
-      aria-label="Why Choose Palafox Construction"
+      aria-label="Why Choose Mercurial Roofing LLC"
     >
       <div id="about" className="absolute -top-24" />
       <CinematicBackground />

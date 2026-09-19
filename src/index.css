@@ -5,83 +5,95 @@
 @layer base {
   :root {
     /* ==========================================================================
-       PALAFOX CONSTRUCTION - GLOBAL COLOR PALETTE
-       Modify these variables to adjust colors across the entire website.
+       MERCURIAL ROOFING LLC - BRAND COLOR PALETTE
+       Primary: Deep Navy #0B1D33 | Secondary: Steel Blue #344B63
+       Dark sections: Midnight Navy #06111F | Light background: Cool White #F4F6F8
+       Cards/sections: Light Steel Gray #D9E0E7 | Main text: Charcoal #17212B
+       Accent: Metallic Silver #AEB8C2 | CTA: Strong Navy #12365A
        ========================================================================== */
 
-    /* ─── 1. Brand Blues (Darkened for optimal contrast & WCAG AA accessibility) ─── */
-    --primary-hex: #087EA8;              /* Palafox Blue: Primary brand, buttons, highlights */
-    --primary-hover-hex: #065A78;        /* Deep Blue: Hover states, active buttons */
-    --primary-rgb: 8, 126, 168;          /* Primary RGB for rgba() transparency effects */
-    --primary-hover-rgb: 6, 90, 120;     /* Primary hover RGB */
+    /* ─── 1. Primary & CTA Colors ─── */
+    --primary-hex: #0B1D33;              /* Deep Navy: Primary brand, navbar, deep contrasts */
+    --primary-hover-hex: #12365A;        /* Strong Navy: CTA buttons, active states */
+    --primary-rgb: 11, 29, 51;           /* Deep Navy RGB */
+    --primary-hover-rgb: 18, 54, 90;     /* Strong Navy RGB */
+    --cta-hex: #12365A;                  /* Strong Navy: High-converting CTA buttons */
+    --cta-rgb: 18, 54, 90;
 
-    /* ─── 2. Neutral Surfaces & Backgrounds ─── */
-    --dark-bg: #F4F7F9;                  /* Off White: Main website background */
-    --section-bg: #F4F7F9;              /* Off White: Section background */
-    --card-bg: #FFFFFF;                  /* White: Cards, navbar, dropdowns */
+    /* ─── 2. Secondary & Accent Colors ─── */
+    --secondary-hex: #344B63;            /* Steel Blue: Secondary accents, sub-actions */
+    --secondary-rgb: 52, 75, 99;
+    --accent-hex: #AEB8C2;               /* Metallic Silver: Subtle highlight borders & badges */
+    --accent-rgb: 174, 184, 194;
+
+    /* ─── 3. Neutral Surfaces & Backgrounds ─── */
+    --dark-bg: #F4F6F8;                  /* Cool White: Main website light background */
+    --section-bg: #F4F6F8;              /* Cool White: Section background */
+    --card-bg: #FFFFFF;                  /* Pure White for crisp card contrast */
+    --card-steel: #D9E0E7;               /* Light Steel Gray: Distinct card surfaces/dividers */
     --white-color: #FFFFFF;              /* Pure White */
-    --charcoal-bg: #FFFFFF;              /* Content area surface */
+    --charcoal-bg: #D9E0E7;              /* Light Steel Gray surface */
 
-    /* ─── 3. Typography Colors ─── */
-    --heading-color: #050505;            /* Black: Headings, titles, strong contrast */
-    --body-text-color: #050505;          /* Black: High contrast body text */
-    --silver-color: #556975;             /* Medium Slate: Subtitles, readable descriptions */
-    --steel-gray-color: #8C9DA6;         /* Secondary caption & helper text */
-    --light-silver-color: #DCE3E7;       /* Soft Gray text/accent on dark */
-    --muted-text: #64748B;               /* Muted slate text */
-    --light-muted-text: #94A3B8;         /* Light muted text */
+    /* ─── 4. Typography Colors ─── */
+    --heading-color: #17212B;            /* Charcoal: Headings, high legibility */
+    --body-text-color: #17212B;          /* Charcoal: Body text */
+    --silver-color: #344B63;             /* Steel Blue: Subtitles, clear descriptions */
+    --steel-gray-color: #556975;         /* Medium Slate caption text */
+    --light-silver-color: #AEB8C2;       /* Metallic Silver text/accent on dark */
+    --muted-text: #5A6D80;               /* Muted text */
+    --light-muted-text: #8C9DAF;         /* Light muted text */
 
-    /* ─── 4. Borders & Dividers ─── */
-    --border-color: #DCE3E7;             /* Soft Gray: Borders, card dividers, input borders */
-    --graphite-color: #DCE3E7;           /* Soft Gray border alias */
+    /* ─── 5. Borders & Dividers ─── */
+    --border-color: #D9E0E7;             /* Light Steel Gray: Borders & dividers */
+    --graphite-color: #D9E0E7;           /* Border alias */
 
-    /* ─── 5. Dark Navy Accent Sections ─── */
-    --navy-color: #102A3A;               /* Dark Navy: Footer, dark CTA containers, hero overlay */
-    --navy-surface: #153346;             /* Navy surface for elements inside dark sections */
+    /* ─── 6. Dark Sections (Midnight Navy) ─── */
+    --navy-color: #06111F;               /* Midnight Navy: Footer, dark heroes & CTA containers */
+    --navy-surface: #0B1D33;             /* Deep Navy surface inside dark sections */
 
-    /* ─── 6. Feedback / Status Colors ─── */
+    /* ─── 7. Feedback / Status Colors ─── */
     --success-color: #16A34A;            /* Success green */
     --danger-color: #DC2626;             /* Danger red */
 
-    /* ─── 7. RGB Values for Opacity Overlays ─── */
-    --dark-bg-rgb: 244, 247, 249;
+    /* ─── 8. RGB Values for Opacity Overlays ─── */
+    --dark-bg-rgb: 244, 246, 248;
     --card-bg-rgb: 255, 255, 255;
     --white-rgb: 255, 255, 255;
-    --black-rgb: 5, 5, 5;
-    --border-rgb: 220, 227, 231;
-    --silver-rgb: 85, 105, 117;
-    --navy-rgb: 16, 42, 58;
+    --black-rgb: 23, 33, 43;
+    --border-rgb: 217, 224, 231;
+    --silver-rgb: 52, 75, 99;
+    --navy-rgb: 6, 17, 31;
 
-    /* ─── 8. Tailwind HSL Tokens (Synchronized with brand variables) ─── */
-    --background: 204 29% 97%;           /* #F4F7F9 */
-    --foreground: 0 0% 2%;               /* #050505 */
-    --popover: 0 0% 100%;                /* #FFFFFF */
-    --popover-foreground: 0 0% 2%;
-    --card: 0 0% 100%;                   /* #FFFFFF */
-    --card-foreground: 0 0% 2%;
-    --primary: 196 91% 35%;              /* #087EA8 (Darkened Palafox Blue) */
+    /* ─── 9. Tailwind HSL Tokens ─── */
+    --background: 210 20% 96%;           /* #F4F6F8 (Cool White) */
+    --foreground: 210 30% 13%;           /* #17212B (Charcoal) */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 13%;
+    --primary: 213 65% 12%;              /* #0B1D33 (Deep Navy) */
     --primary-foreground: 0 0% 100%;
-    --secondary: 196 92% 25%;            /* #065A78 (Deep Blue) */
+    --secondary: 211 31% 30%;            /* #344B63 (Steel Blue) */
     --secondary-foreground: 0 0% 100%;
-    --accent: 196 91% 35%;
-    --accent-foreground: 0 0% 100%;
-    --muted: 204 29% 95%;
-    --muted-foreground: 202 15% 40%;
-    --border: 202 19% 88%;               /* #DCE3E7 */
-    --input: 202 19% 88%;                /* #DCE3E7 */
+    --accent: 210 15% 72%;               /* #AEB8C2 (Metallic Silver) */
+    --accent-foreground: 210 30% 13%;
+    --muted: 210 23% 88%;                /* #D9E0E7 (Light Steel Gray) */
+    --muted-foreground: 211 31% 30%;     /* #344B63 (Steel Blue) */
+    --border: 210 23% 88%;               /* #D9E0E7 (Light Steel Gray) */
+    --input: 210 23% 88%;                /* #D9E0E7 (Light Steel Gray) */
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-    --ring: 196 91% 35%;
+    --ring: 210 67% 21%;                 /* #12365A (Strong Navy) */
     --radius: 10px;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 2%;
-    --sidebar-primary: 196 91% 35%;
+    --sidebar-background: 210 20% 96%;
+    --sidebar-foreground: 210 30% 13%;
+    --sidebar-primary: 213 65% 12%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 196 92% 25%;
+    --sidebar-accent: 211 31% 30%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 202 19% 88%;
-    --sidebar-ring: 196 91% 35%;
+    --sidebar-border: 210 23% 88%;
+    --sidebar-ring: 210 67% 21%;
 
     --font-heading: 'Cinzel', serif;
     --font-body: 'Montserrat', sans-serif;
@@ -402,7 +414,7 @@
     will-change: transform;
   }
 
-  /* SUBTLE PALAFOX BLUE PULSE */
+  /* SUBTLE MERCURIAL BLUE PULSE */
   @keyframes blue-pulse {
 
     0%,

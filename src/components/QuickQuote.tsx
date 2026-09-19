@@ -32,7 +32,7 @@ const QuickQuote = () => {
         setIsSubmitting(true);
 
         const emailContent = `
-🏗️ NEW QUICK QUOTE REQUEST - Palafox Construction
+🏗️ NEW INSPECTION REQUEST - Mercurial Roofing LLC
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -50,20 +50,20 @@ ${formData.message}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏱️ Submitted: ${new Date().toLocaleString()}
 🌐 Source: Quick Quote Widget
-Locally Owned & Operated
+Fully Insured • Multi-State Coverage
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     `;
 
         try {
             try {
-                const response = await fetch('https://formsubmit.co/ajax/info@palafoxroofing.com', {
+                const response = await fetch('https://formsubmit.co/ajax/support@mercurialroofing.net', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        _subject: `🏠 Quick Quote - ${formData.name}`,
+                        _subject: `🏠 Free Inspection Request - ${formData.name}`,
                         name: formData.name,
                         email: formData.email,
                         phone: formData.phone,
@@ -82,13 +82,13 @@ Locally Owned & Operated
                 console.log('FormSubmit failed, using mailto fallback');
             }
 
-            const mailtoLink = `mailto:info@palafoxroofing.com?subject=🏗️ Quick Quote - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+            const mailtoLink = `mailto:support@mercurialroofing.net?subject=🏗️ Inspection Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
             window.location.href = mailtoLink;
             showSuccess();
 
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Please email us directly at info@palafoxroofing.com');
+            alert('Please email us directly at support@mercurialroofing.net');
         } finally {
             setIsSubmitting(false);
         }

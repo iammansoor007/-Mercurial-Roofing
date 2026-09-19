@@ -8,7 +8,7 @@ import {
 import completeData from "../src/data/completeData.json";
 import imgRoofing from "@/assets/p1.png";
 import imgConstruction from "@/assets/p2.png";
-import imgRestoration from "@/assets/palafox_roofing_upscaled_2x.jpg";
+import imgRestoration from "@/assets/mercurial_roofing_upscaled_2x.jpg";
 
 const serviceImageMap: Record<string, string> = {
   "01": imgRoofing,

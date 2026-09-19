@@ -2,42 +2,55 @@
   "navbar": {
     "services": [
       {
-        "title": "ROOFING",
-        "description": "Precision roofing systems built to endure Texas weather.",
+        "title": "ROOF REPLACEMENT",
+        "description": "Full tear-off and installation of high-performance architectural shingles.",
         "icon": "Home",
         "items": [
-          "Roofing"
+          "Full Roof Replacement"
         ],
         "features": [
-          "Licensed & Insured",
-          "Workmanship Backed",
-          "4.9 Google Rating"
+          "100% Workmanship Guaranteed",
+          "Premium Materials",
+          "Full Insurance Protection"
         ]
       },
       {
-        "title": "CONSTRUCTION",
-        "description": "Build with precision. Planned improvements done right.",
+        "title": "LEAK DETECTION & FLASHING",
+        "description": "Immediate diagnostic inspections to stop active moisture infiltration.",
         "icon": "ClipboardCheck",
         "items": [
-          "Construction"
+          "Leak Detection & Flashing"
         ],
         "features": [
-          "Direct Communication",
-          "Exact Planning",
-          "1,200+ Projects Delivered"
+          "24/7 Emergency Leak Response",
+          "Structural Protection",
+          "Fast Dispatch"
         ]
       },
       {
-        "title": "RESTORATION",
-        "description": "24/7 emergency restoration. Respond without delay.",
+        "title": "STORM & HAIL CLAIMS",
+        "description": "Detailed photographic damage documentation for full insurance approval.",
         "icon": "Sun",
         "items": [
-          "Restoration"
+          "Storm & Hail Insurance Claims"
         ],
         "features": [
-          "24/7 Response",
-          "Decisive Response",
-          "15+ Years in the Field"
+          "Full Policy Coverage",
+          "Pre-Loss Condition Restoration",
+          "Direct Contractor Intake"
+        ]
+      },
+      {
+        "title": "GUTTERS & DOWNSPOUTS",
+        "description": "Seamless gutter systems and heavy-duty downspouts to protect your property.",
+        "icon": "Droplets",
+        "items": [
+          "Gutters & Downspouts"
+        ],
+        "features": [
+          "Seamless Systems",
+          "Gutter Guards Available",
+          "Foundation Protection"
         ]
       }
     ],
@@ -70,99 +83,104 @@
     ],
     "stats": [
       {
-        "value": "DFW Metroplex",
-        "label": "Service Area",
+        "value": "Sugar Hill, GA",
+        "label": "Headquarters",
         "icon": "MapPin"
       },
       {
-        "value": "Dallas",
-        "label": "Headquarters",
+        "value": "5 States",
+        "label": "Coverage",
         "icon": "Home"
       },
       {
-        "value": "4.9",
-        "label": "Google Rating",
+        "value": "100%",
+        "label": "Workmanship Guaranteed",
         "icon": "Star"
       },
       {
         "value": "24/7",
-        "label": "Emergency Response",
+        "label": "Emergency Leak Response",
         "icon": "Shield"
       }
     ],
     "cta": {
-      "title": "Put The Right Team On Your Property",
-      "description": "One accountable team for the property you are building — and the one you need to protect. Serving the entire DFW Metroplex.",
-      "buttonText": "24/7 Emergency",
-      "buttonLink": "tel:+18172323866"
+      "title": "Need Fast Roof Support?",
+      "description": "Get an on-site structural inspection or emergency tarping service across our fully insured coverage states.",
+      "buttonText": "Call Now",
+      "buttonLink": "tel:+14703236048"
     },
     "ctaButton": {
-      "label": "Start Your Request",
+      "label": "Free Inspection",
       "href": "#contact",
       "icon": "Calendar"
     },
     "servicesMenuTitle": "Our Services",
     "quickLinksTitle": "Quick Links",
-    "mobileCtaText": "Start Your Request",
-    "logoAlt": "Palafox Construction Logo"
+    "mobileCtaText": "Free Inspection",
+    "logoAlt": "Mercurial Roofing LLC Logo"
   },
   "hero": {
-    "badge": "Dallas • Trophy Club • Keller • DFW Metroplex",
+    "badge": "HQ: Sugar Hill, GA • Multi-State Coverage • Fully Insured",
     "headlines": [
-      "Built to endure.",
-      "Ready to restore."
+      "Engineered Roofing.",
+      "Built to Protect."
     ],
-    "description": "One accountable team for the property you are building — and the one you need to protect. Roofing, construction, and 24/7 emergency restoration across the DFW Metroplex.",
+    "description": "Residential and commercial roofing solutions backed by superior materials, honest craftsmanship, and full insurance policy protection across Georgia, Maryland, Virginia, North Carolina, and South Carolina.",
     "emergencyButton": {
-      "text": "24/7 Emergency: (817) 232-3866",
-      "href": "tel:+18172323866"
+      "text": "24/7 Emergency: (470) 323-6048",
+      "href": "tel:+14703236048"
     },
     "requestButton": {
-      "text": "Start Your Request",
+      "text": "Schedule Free Inspection",
       "href": "#contact"
     },
     "trustMetrics": [
       {
-        "label": "Google Rating",
-        "value": "4.9 ★",
-        "icon": "Star"
+        "label": "Workmanship Guaranteed",
+        "value": "100%",
+        "icon": "Shield"
       },
       {
-        "label": "Projects Delivered",
-        "value": "1,200+",
-        "icon": "Building2"
-      },
-      {
-        "label": "Emergency Dispatch",
-        "value": "< 60 Min",
+        "label": "Emergency Leak Response",
+        "value": "24/7",
         "icon": "Clock"
       },
       {
-        "label": "Texas Field Experience",
-        "value": "15+ Years",
-        "icon": "Shield"
+        "label": "Full Insurance Coverage",
+        "value": "5 States",
+        "icon": "MapPin"
+      },
+      {
+        "label": "Dispatch",
+        "value": "Direct",
+        "icon": "Phone"
       }
     ],
     "estimateCard": {
-      "title": "Priority Estimate",
-      "subtitle": "Direct dispatch across the DFW Metroplex",
+      "title": "Priority Inspection",
+      "subtitle": "Direct dispatch across 5 covered states",
       "badge": "Rapid Dispatch",
-      "divisionLabel": "Select Division",
+      "divisionLabel": "Select Service",
       "divisions": [
         {
-          "key": "roofing",
-          "label": "Roofing",
+          "key": "replacement",
+          "label": "Replacement",
           "icon": "Home"
         },
         {
-          "key": "construction",
-          "label": "Build",
-          "icon": "Hammer"
+          "key": "leak",
+          "label": "Leak Repair",
+          "icon": "AlertTriangle"
         },
         {
-          "key": "restoration",
-          "label": "Restore",
-          "icon": "AlertTriangle"
+          "key": "storm",
+          "label": "Storm Claim",
+          "icon": "Shield"
+        },
+        {
+          "key": "gutters",
+          "label": "Gutters",
+          "icon": "Droplets"
         }
       ],
       "fields": {
@@ -172,11 +190,11 @@
         },
         "phone": {
           "label": "Phone Number (For Fast Callback)",
-          "placeholder": "e.g. (817) 555-0192"
+          "placeholder": "e.g. (470) 555-0192"
         },
         "address": {
-          "label": "Property Address or City",
-          "placeholder": "e.g. 1400 Keller Pkwy, Keller TX"
+          "label": "Property Address & State",
+          "placeholder": "e.g. 5000 Main St, Sugar Hill, GA"
         },
         "urgency": {
           "label": "Project Priority",
@@ -202,7 +220,7 @@
       },
       "success": {
         "title": "Dispatch Request Received",
-        "message": "A Palafox project specialist is reviewing your property scope and will call shortly."
+        "message": "A Mercurial Roofing specialist is reviewing your property scope and will call shortly."
       },
       "trustNote": "Licensed & Insured • Free Detailed Written Scopes • Direct Insurance Billing"
     }
@@ -211,36 +229,36 @@
     "badge": "Get to Know Us",
     "headline": {
       "prefix": "Welcome to",
-      "highlight": "Palafox",
+      "highlight": "Mercurial Roofing LLC",
       "suffix": ""
     },
-    "description": "We're a licensed and insured roofing, construction, and restoration company built on one operating standard across two divisions. Based in <span class=\"font-semibold text-primary\">Dallas, Texas</span>, we serve the entire DFW Metroplex — from planned construction improvements to urgent 24/7 emergency restoration. One accountable team owns the next step.",
+    "description": "We're a fully insured roofing contractor headquartered in <span class=\"font-semibold text-primary\">Sugar Hill, Georgia</span>, with multi-state coverage across Georgia, Maryland, Virginia, North Carolina, and South Carolina. We deliver residential and commercial roofing solutions backed by superior materials, honest craftsmanship, and full insurance policy protection.",
     "image": {
-      "src": "PalafoxCrew",
-      "alt": "Palafox roofing, construction, and restoration crew",
-      "badge": "One Standard. Two Divisions."
+      "src": "MercurialRoofingCrew",
+      "alt": "Mercurial Roofing LLC crew on a residential roof",
+      "badge": "Engineered Roofing Built to Protect"
     },
     "stats": [
       {
-        "value": 1200,
-        "suffix": "+",
-        "label": "Projects Delivered"
-      },
-      {
         "value": 100,
         "suffix": "%",
-        "label": "Accountable Team"
+        "label": "Workmanship Guaranteed"
+      },
+      {
+        "value": 5,
+        "suffix": " States",
+        "label": "Full Insurance Coverage"
       },
       {
         "value": "24/7",
         "suffix": "",
-        "label": "Emergency Response"
+        "label": "Emergency Leak Response"
       }
     ],
     "buttons": [
       {
-        "text": "CALL FOR FREE ESTIMATE",
-        "href": "tel:+18172323866",
+        "text": "CALL FOR FREE INSPECTION",
+        "href": "tel:+14703236048",
         "primary": true
       },
       {
@@ -250,66 +268,66 @@
       }
     ],
     "trustBadges": {
-      "founded": "",
-      "headquarters": "Dallas, Texas"
+      "founded": "Fully Insured",
+      "headquarters": "Sugar Hill, Georgia"
     }
   },
   "aboutStory": {
     "badge": "Our Story",
     "headline": {
-      "prefix": "Built to endure.",
-      "highlight": "Ready to restore.",
+      "prefix": "Engineered Roofing.",
+      "highlight": "Honest Craftsmanship.",
       "suffix": ""
     },
     "description": [
-      "Palafox was founded on a simple but powerful idea: property owners shouldn't have to choose between a company that builds and a company that restores. Whether you're planning a construction project or facing an urgent emergency, you deserve the same accountability, the same discipline, and the same standard of work — every single time. That's why we built Palafox with two divisions under one roof and one operating standard that never changes.",
-      "Our Construction Group handles planned improvements with precision — documented scopes, clear timelines, protected sites, and direct communication from first call to final walkthrough. Our Restoration division responds without delay when disaster strikes, mobilizing field teams 24/7 to protect your property and get you back to normal fast. Two divisions. One accountable team. One standard.",
-      "Today, Palafox proudly serves the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities. With over 1,200 projects delivered, a 4.9 Google rating, and 15+ years in the field, we've earned a reputation for doing things right the first time. Licensed and insured. Workmanship backed. Ready when you are. Put the right team on your property."
+      "Mercurial Roofing LLC was founded on a simple principle: every roof should be engineered to protect what matters most. Too many homeowners and business owners across the Southeast were dealing with aging, storm-battered roofs, patchwork repairs, and insurance claims that never covered the full scope of damage. We knew there had to be a better way — one built on superior materials, honest workmanship, and full accountability from inspection to final walkthrough.",
+      "Headquartered in Sugar Hill, Georgia, we built Mercurial Roofing with a direct-dispatch model and a fully insured multi-state operation. No high-pressure sales tactics. No cutting corners on materials. Just honest, photographic diagnoses of your roof deck, flashing, and shingle condition — followed by a clear, fixed-price estimate backed by material warranties and full insurance guidance. Whether it's a full roof replacement, emergency leak detection, storm and hail claims, or seamless gutters and downspouts, we handle every project with the same disciplined standard.",
+      "Today, Mercurial Roofing LLC proudly serves residential and commercial clients across five states — Georgia, Maryland, Virginia, North Carolina, and South Carolina — with state-wide insured coverage and 24/7 emergency leak response. We're Google Verified, Yelp Official, and committed to protecting your property like it's our own. Engineered roofing built to protect what matters most."
     ],
     "image": {
-      "src": "PalafoxFounder",
-      "alt": "Palafox leadership team and field crew",
-      "badge": "Licensed & Insured"
+      "src": "MercurialRoofingFounder",
+      "alt": "Mercurial Roofing LLC leadership and field crew",
+      "badge": "Fully Insured • Multi-State"
     },
     "stats": [
       {
-        "value": "DFW",
-        "suffix": " Metroplex",
-        "label": "Service Area"
-      },
-      {
-        "value": "Dallas",
-        "suffix": ", TX",
+        "value": "Sugar Hill",
+        "suffix": ", GA",
         "label": "Headquarters"
       },
       {
-        "value": "4.9",
+        "value": "5 States",
         "suffix": "",
-        "label": "Google Rating"
+        "label": "Full Coverage"
+      },
+      {
+        "value": "100%",
+        "suffix": "",
+        "label": "Workmanship Guaranteed"
       }
     ]
   },
   "services": {
-    "badge": "Our Services",
+    "badge": "Our Core Capabilities",
     "headline": {
-      "prefix": "One Standard.",
-      "highlight": "Two Divisions.",
+      "prefix": "Complete Roofing Solutions",
+      "highlight": "Backed by Full Insurance",
       "suffix": ""
     },
     "description": [
-      "Palafox operates two divisions under one accountable standard — Roofing and Construction Group and 24/7 Emergency Restoration.",
-      "From planned improvements to urgent recovery, one accountable team owns the next step across the entire DFW Metroplex."
+      "Every roof is engineered to withstand extreme weather, heavy downpours, wind gusts, and severe hail.",
+      "From full roof replacement to storm and hail insurance claims, we deliver complete roofing solutions across five fully insured states."
     ],
     "stats": [
       {
-        "value": 3,
+        "value": 4,
         "suffix": "",
         "label": "Core Services"
       },
       {
-        "value": 2,
-        "suffix": "",
-        "label": "Divisions"
+        "value": 5,
+        "suffix": " States",
+        "label": "Full Coverage"
       },
       {
         "value": "24/7",
@@ -320,116 +338,116 @@
     "services": [
       {
         "number": "01",
-        "title": "Roofing",
-        "description": "Precision roofing systems built to endure Texas weather. From new installations to repairs, our roofing team delivers workmanship backed by 15+ years in the field and a 4.9 Google rating.",
+        "title": "Full Roof Replacement",
+        "description": "Complete tear-off down to the decking, replacement of damaged plywood, premium synthetic underlayment, and installation of high-performance architectural shingles.",
         "icon": "Home",
-        "tag": "Division",
+        "tag": "Residential & Commercial",
         "features": [
-          "Licensed & Insured",
-          "Workmanship Backed",
-          "Precision Installation"
+          "Full Tear-Off",
+          "Premium Underlayment",
+          "Architectural Shingles"
         ]
       },
       {
         "number": "02",
-        "title": "Construction",
-        "description": "Build with precision. Our Construction Group handles planned improvements with documented scopes, clear timelines, and direct communication from first call to final walkthrough.",
+        "title": "Leak Detection & Flashing",
+        "description": "Immediate diagnostic inspections to stop active moisture infiltration before it destroys structural rafters, drywall, and electrical systems.",
         "icon": "Building2",
-        "tag": "Division",
+        "tag": "24/7 Emergency",
         "features": [
-          "Exact Planning",
-          "Direct Communication",
-          "Protected Clean Sites"
+          "Diagnostic Inspections",
+          "Structural Protection",
+          "Emergency Tarping"
         ]
       },
       {
         "number": "03",
-        "title": "Restoration",
-        "description": "Respond without delay. Our 24/7 Emergency Restoration division mobilizes without unnecessary delay to protect your property and restore it fast — with the same standard as our construction work.",
+        "title": "Storm & Hail Insurance Claims",
+        "description": "Detailed photographic damage documentation to ensure your insurance carrier approves the full scope required to restore your home to pre-loss condition.",
         "icon": "Hammer",
-        "tag": "Division",
+        "tag": "Insurance Backed",
         "features": [
-          "24/7 Response",
-          "Decisive Mobilization",
-          "One Point of Contact"
+          "Photographic Documentation",
+          "Full Scope Approval",
+          "Pre-Loss Restoration"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Gutters & Downspouts",
+        "description": "Seamless gutter systems, heavy-duty downspouts, and gutter guards designed to divert rainwater and safeguard your siding, fascia, and foundation.",
+        "icon": "Droplets",
+        "tag": "Water Management",
+        "features": [
+          "Seamless Gutters",
+          "Heavy-Duty Downspouts",
+          "Gutter Guards"
         ]
       }
     ],
-    "cardCta": "Get Free Estimate",
+    "cardCta": "Request Estimate",
     "cta": {
       "badge": "Free Consultation Available",
-      "title": "Not Sure Which Division You Need?",
-      "description": "Tell us what your property needs. From planned improvements to urgent recovery, we'll route your request to the right specialist.",
-      "buttonText": "Start Your Request",
+      "title": "Not Sure Which Service You Need?",
+      "description": "Tell us what your roof needs. From planned replacement to urgent recovery, we'll route your request to the right specialist.",
+      "buttonText": "Schedule Free Inspection",
       "buttonLink": "#contact",
-      "phone": "(817) 232-3866",
-      "phoneLink": "tel:+18172323866",
-      "phoneLabel": "DFW · Available 24/7",
+      "phone": "(470) 323-6048",
+      "phoneLink": "tel:+14703236048",
+      "phoneLabel": "Multi-State · Available 24/7",
       "trustBadges": [
-        "Licensed & Insured",
+        "Fully Insured",
         "Locally Owned",
-        "Free Estimates"
+        "Free Inspections"
       ],
       "dividerText": "Or Call Direct",
-      "callButtonText": "Call (817) 232-3866"
+      "callButtonText": "Call (470) 323-6048"
     }
   },
   "howWeWork": {
-    "badge": "Our Methodology",
-    "headline": "A Controlled Process. <span class=\"text-primary\">Every Time.</span>",
-    "description": "Whether you are building or restoring, every Palafox project follows the same disciplined four-step process — so you always know what happens, when it happens, and who owns it.",
-    "stagePrefix": "Stage",
-    "stageOf": "of 04",
+    "badge": "Fast Turnaround",
+    "headline": "Request Your Free Roof Inspection <span class=\"text-primary\">Today</span>",
+    "description": "No high-pressure sales tactics. The Mercurial Roofing team provides an honest, photographic diagnosis of your roof deck, flashing, and shingle condition.",
+    "stagePrefix": "Step",
+    "stageOf": "of 03",
     "verifiedTitle": "Verified Precision",
     "deliverablesTitle": "Mandatory Stage Deliverables",
-    "requestButtonText": "Request Scope for Your Property",
+    "requestButtonText": "Request Your Free Inspection",
     "requestButtonLink": "#contact",
     "steps": [
       {
         "number": "01",
-        "title": "Assess",
-        "subtitle": "On-Site Diagnostics & Scoping",
-        "description": "Comprehensive physical inspection, high-resolution photo documentation, and itemized scoping before any work begins.",
+        "title": "Same-Day Dispatch Confirmation",
+        "subtitle": "Scheduling & Lock-In",
+        "description": "We reach out promptly to lock in a time that fits your schedule — no waiting around, no uncertainty.",
         "deliverables": [
-          "Multi-point physical & roof inspection",
-          "Photo documentation & damage assessment",
-          "Transparent itemized cost scope"
+          "Same-day dispatch confirmation",
+          "Convenient scheduling window",
+          "Direct contact with our dispatch team"
         ],
         "icon": "ClipboardCheck"
       },
       {
         "number": "02",
-        "title": "Plan",
-        "subtitle": "Timeline & Specification",
-        "description": "Detailed project schedule, architectural material specifications, and direct communication coordination.",
+        "title": "Comprehensive Photographic Report",
+        "subtitle": "Drone & Roof Documentation",
+        "description": "High-resolution drone and roof photos detailing any storm impact or wear — a full, honest picture of your roof's true condition.",
         "deliverables": [
-          "Fixed milestone timeline",
-          "Commercial-grade material selection",
-          "Dedicated Palafox project lead"
+          "High-resolution drone photography",
+          "Detailed roof & flashing inspection",
+          "Clear photographic damage report"
         ],
         "icon": "Calendar"
       },
       {
         "number": "03",
-        "title": "Execute",
-        "subtitle": "Disciplined Site Fieldwork",
-        "description": "Certified crew deployment, strict Texas safety compliance, continuous debris management, and complete property protection.",
+        "title": "Clear, Fixed-Price Estimate",
+        "subtitle": "Upfront Pricing & Insurance Guidance",
+        "description": "Upfront pricing with material warranties and full insurance guidance — so you know exactly what happens and what it costs.",
         "deliverables": [
-          "Experienced, certified field crews",
-          "Continuous site protection & magnetic sweeps",
-          "Daily progress updates & supervision"
-        ],
-        "icon": "Hammer"
-      },
-      {
-        "number": "04",
-        "title": "Verify",
-        "subtitle": "Final Walkthrough & Warranty",
-        "description": "Joint multi-point walkthrough with property owner, quality certification, and formal written workmanship warranty delivery.",
-        "deliverables": [
-          "Owner joint final walkthrough",
-          "Written Palafox warranty packet",
-          "100% spotless site cleanup"
+          "Fixed-price written estimate",
+          "Material warranty documentation",
+          "Full insurance claim guidance"
         ],
         "icon": "ShieldCheck"
       }
@@ -437,273 +455,273 @@
   },
   "whyChooseUs": {
     "section": {
-      "badge": "Why Palafox",
-      "headline": "Accountability <span class=\"text-primary\">Is The Standard.</span>",
-      "description": "We hold ourselves to one operating standard across both divisions — so whether you are building or recovering, the experience is equally clear and equally controlled.",
+      "badge": "Why Mercurial Roofing",
+      "headline": "Insurance-Backed <span class=\"text-primary\">Peace of Mind.</span>",
+      "description": "We hold ourselves to one operating standard across every state we serve — so whether you are replacing or restoring, the experience is equally clear and equally controlled.",
       "standardGuarantee": "Standard Guarantee"
     },
     "features": [
       {
         "icon": "Award",
-        "title": "Licensed & Insured",
-        "description": "Full general liability and worker protection coverage safeguarding your property and investment on every job."
+        "title": "100% Workmanship Guaranteed",
+        "description": "Every roof we install is backed by our workmanship guarantee — no shortcuts, no compromises, no exceptions."
       },
       {
         "icon": "MessageSquare",
-        "title": "Direct Communication",
-        "description": "One accountable point of contact from first inspection to final walkthrough. No runaround, no confusion."
+        "title": "24/7 Emergency Leak Response",
+        "description": "Active leaks don't wait for business hours. Neither do we. Emergency tarping and leak detection available 24/7."
       },
       {
         "icon": "Compass",
-        "title": "Exact Planning",
-        "description": "Documented scope so you know exactly what happens and when. Clear timelines, commercial-grade materials."
+        "title": "5-State Full Insurance Coverage",
+        "description": "Active insurance policy gives you full protection across entire states for residential and commercial roofing projects."
       },
       {
         "icon": "Clock",
-        "title": "Decisive Response",
-        "description": "Field teams that mobilize without unnecessary delay. 24/7 emergency dispatch across the entire DFW Metroplex."
+        "title": "Direct Dispatch",
+        "description": "Speak directly with our dispatch team. No call centers, no runaround — just fast, direct, accountable service."
       },
       {
         "icon": "Shield",
-        "title": "Workmanship Backed",
-        "description": "15+ years in the field, 1,200+ projects delivered, and a 4.9 Google rating earned through rigorous Texas craftsmanship."
+        "title": "Full Policy Protection",
+        "description": "Detailed photographic documentation ensures your insurance carrier approves the full scope required to restore your property."
       },
       {
         "icon": "Layers",
-        "title": "One Standard, Two Divisions",
-        "description": "Planned roofing & construction or rapid 24/7 restoration — the experience is equally clear, controlled, and accountable."
+        "title": "Honest, Photographic Diagnosis",
+        "description": "No high-pressure sales tactics. Just an honest, photographic diagnosis of your roof's true condition — every time."
       }
     ],
     "stats": [
       {
-        "value": "15+",
-        "suffix": "Years",
-        "label": "Texas Field Experience"
+        "value": "5",
+        "suffix": "States",
+        "label": "Full Insurance Coverage"
       },
       {
-        "value": "1,200+",
+        "value": "100%",
         "suffix": "",
-        "label": "Projects Completed"
-      },
-      {
-        "value": "4.9",
-        "suffix": "★",
-        "label": "Customer Satisfaction"
+        "label": "Workmanship Guaranteed"
       },
       {
         "value": "24/7",
         "suffix": "Dispatch",
-        "label": "Emergency DFW Response"
+        "label": "Emergency Response"
+      },
+      {
+        "value": "Sugar Hill",
+        "suffix": ", GA",
+        "label": "Headquarters"
       }
     ],
     "cta": {
       "badge": "START YOUR PROJECT",
-      "title": "Ready to Put the Right Team <span class=\"text-primary\">on Your Property?</span>",
-      "description": "Whether you need a planned roof replacement, custom construction, or 24/7 emergency restoration, Palafox Construction is ready to deploy across Dallas, Trophy Club, Keller, and DFW.",
+      "title": "Ready to Put the Right Team <span class=\"text-primary\">on Your Roof?</span>",
+      "description": "Whether you need a planned roof replacement, emergency leak repair, storm and hail claims, or seamless gutters, Mercurial Roofing LLC is ready to deploy across all 5 covered states.",
       "trustBadges": [
-        "Licensed & Insured",
-        "Free Detailed Estimates",
+        "Fully Insured",
+        "Free Detailed Inspections",
         "24/7 Emergency Dispatch"
       ],
       "buttons": [
         {
-          "text": "(817) 232-3866",
-          "href": "tel:+18172323866",
+          "text": "(470) 323-6048",
+          "href": "tel:+14703236048",
           "primary": true
         },
         {
-          "text": "Start Your Request",
+          "text": "Schedule Free Inspection",
           "href": "#contact",
           "primary": false
         }
       ],
-      "imageAlt": "Palafox Construction Professional"
+      "imageAlt": "Mercurial Roofing Professional"
     }
   },
   "portfolio": {
     "section": {
-      "badge": "Verified Texas Projects",
-      "headline": "Featured <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Projects</span>",
-      "description": "Explore recent roofing installations, planned construction builds, and rapid emergency restorations delivered across Dallas, Trophy Club, Keller, and the DFW Metroplex.",
+      "badge": "Proven Workmanship",
+      "headline": "Real Transformations <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Before & After</span>",
+      "description": "Explore recent roof replacements, storm damage restorations, leak repairs, and gutter installations delivered across Georgia, Maryland, Virginia, North Carolina, and South Carolina.",
       "viewScopeLabel": "View Project Scope",
       "allFilterLabel": "All"
     },
     "modal": {
       "scopeTitle": "Project Scope & Deliverables",
-      "guaranteeTitle": "Palafox Standard Guarantee",
+      "guaranteeTitle": "Mercurial Standard Guarantee",
       "guaranteeItems": [
-        "Licensed & Insured",
+        "Fully Insured",
         "100% Cleanup Guarantee",
-        "Written Warranty"
+        "Written Workmanship Warranty"
       ],
       "closeButton": "Close",
       "ctaButton": "Request Similar Estimate"
     },
     "consultation": {
-      "badge": "On-Site Estimates & Scopes",
-      "title": "Have a Similar Property in DFW?",
-      "description": "Put our licensed crews on your roof or construction project. We provide complimentary detailed assessments, documented scopes, and direct insurance billing.",
-      "buttonText": "Start Your Request",
+      "badge": "On-Site Inspections & Scopes",
+      "title": "Have a Similar Property in Our Coverage Area?",
+      "description": "Put our fully insured crews on your roof. We provide complimentary detailed assessments, photographic documentation, and direct insurance billing.",
+      "buttonText": "Schedule Free Inspection",
       "buttonLink": "#contact",
-      "phone": "(817) 232-3866",
-      "phoneLink": "tel:+18172323866"
+      "phone": "(470) 323-6048",
+      "phoneLink": "tel:+14703236048"
     },
     "projects": [
       {
         "number": "01",
-        "title": "Dallas Roof Replacement",
-        "category": "Roofing",
+        "title": "Sugar Hill Full Roof Replacement",
+        "category": "Replacement",
         "image": "portfolio1",
-        "location": "Dallas, TX",
+        "location": "Sugar Hill, GA",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Full Roof Replacement",
-        "desc": "Complete roof tear-off and replacement on a residential property. Precision installation, clean site, final walkthrough verified."
+        "scope": "Complete Tear-Off & Replacement",
+        "desc": "Aging, storm-battered roof transformed into a weather-tight architectural asset with premium underlayment and shingles."
       },
       {
         "number": "02",
-        "title": "Trophy Club Construction Project",
-        "category": "Construction",
+        "title": "Atlanta Storm Damage Restoration",
+        "category": "Storm & Hail",
         "image": "portfolio2",
-        "location": "Trophy Club, TX",
+        "location": "Atlanta, GA",
         "year": "2025",
         "accent": "from-primary to-primary/70",
-        "scope": "Planned Property Improvement",
-        "desc": "Documented scope, clear timeline, and protected site throughout. Delivered on schedule with direct communication from start to finish."
+        "scope": "Insurance Claim Restoration",
+        "desc": "Full photographic documentation and complete restoration to pre-loss condition with insurance approval."
       },
       {
         "number": "03",
-        "title": "Keller Emergency Restoration",
-        "category": "Restoration",
+        "title": "Maryland Commercial Roofing",
+        "category": "Replacement",
         "image": "portfolio3",
-        "location": "Keller, TX",
+        "location": "Maryland",
         "year": "2024",
         "accent": "from-primary/90 to-primary/60",
-        "scope": "24/7 Emergency Response",
-        "desc": "Mobilized without unnecessary delay. Property protected and fully restored with the same standard as our construction work."
+        "scope": "Commercial Roof System",
+        "desc": "High-performance commercial roofing installation engineered to withstand heavy downpours and wind gusts."
       },
       {
         "number": "04",
-        "title": "DFW Commercial Roofing",
-        "category": "Roofing",
+        "title": "Virginia Leak Detection & Repair",
+        "category": "Leak Repair",
         "image": "portfolio4",
-        "location": "DFW Metroplex",
+        "location": "Virginia",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Commercial Roofing System",
-        "desc": "Commercial roofing installation built to endure Texas weather. Workmanship backed, site left clean and protected."
+        "scope": "Emergency Leak Response",
+        "desc": "Immediate diagnostic inspection and flashing repair stopped active moisture infiltration before structural damage."
       },
       {
         "number": "05",
-        "title": "Dallas Property Restoration",
-        "category": "Restoration",
+        "title": "North Carolina Gutters & Downspouts",
+        "category": "Gutters",
         "image": "portfolio5",
-        "location": "Dallas, TX",
+        "location": "North Carolina",
         "year": "2024",
         "accent": "from-primary/80 to-primary/60",
-        "scope": "Emergency Restoration",
-        "desc": "Full restoration after property damage. One point of contact from first call to final walkthrough."
+        "scope": "Seamless Gutter System",
+        "desc": "Heavy-duty seamless gutters and downspouts installed to divert rainwater and safeguard siding and foundation."
       },
       {
         "number": "06",
-        "title": "Southlake Standing Seam Metal Roof",
-        "category": "Construction",
+        "title": "South Carolina Storm & Hail Claim",
+        "category": "Storm & Hail",
         "image": "portfolio6",
-        "location": "Southlake, TX",
+        "location": "South Carolina",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Architectural Metal Roofing",
-        "desc": "Heavy-gauge standing seam metal roofing engineered for maximum weather endurance, hail resistance, and architectural curb appeal."
+        "scope": "Full Insurance Restoration",
+        "desc": "Complete storm and hail restoration with detailed photographic documentation and full insurance carrier approval."
       }
     ],
     "button": {
-      "text": "Start Your Request",
+      "text": "Schedule Free Inspection",
       "link": "#contact"
     }
   },
   "testimonials": {
     "section": {
-      "badge": "Client Proof",
+      "badge": "Client Testimonials",
       "headline": "Trusted By The Community",
-      "description": "Hear from homeowners and businesses who trust Palafox for roofing, construction, and 24/7 emergency restoration across the DFW Metroplex.",
-      "featured": "Trusted Roofing, Construction & Restoration in DFW"
+      "description": "Hear from homeowners and businesses who trust Mercurial Roofing LLC across Georgia, Maryland, Virginia, North Carolina, and South Carolina.",
+      "featured": "Trusted Roofing Contractor in Sugar Hill, GA & Multi-State"
     },
     "testimonials": [
       {
         "id": 1,
         "name": "Maria R.",
-        "position": "Verified Client",
-        "company": "Dallas",
+        "position": "Homeowner",
+        "company": "Sugar Hill, GA",
         "avatar": "MR",
-        "text": "They treated our emergency like it was their own property. Palafox responded fast, communicated clearly, and handled everything from start to finish."
+        "text": "Mercurial Roofing handled our full roof replacement with complete professionalism. Honest diagnosis, clear fixed-price estimate, and the crew left the site spotless. Exactly what you want."
       },
       {
         "id": 2,
         "name": "David K.",
-        "position": "Homeowner",
-        "company": "Trophy Club",
+        "position": "Property Manager",
+        "company": "Atlanta, GA",
         "avatar": "DK",
-        "text": "Palafox handled our roofing project with precision. Documented scope, clear timeline, and the crew left the site spotless. Exactly what you want."
+        "text": "We had storm damage across multiple properties. Mercurial Roofing documented everything photographically and got full insurance approval. Fast, insured, and reliable."
       },
       {
         "id": 3,
         "name": "Sarah L.",
-        "position": "Property Manager",
-        "company": "Keller",
+        "position": "Business Owner",
+        "company": "Maryland",
         "avatar": "SL",
-        "text": "We've used Palafox for both construction and emergency restoration across multiple properties. One standard, two divisions — they deliver every time."
+        "text": "Called Mercurial for emergency leak detection. They responded fast, stopped the infiltration, and repaired the flashing before it caused structural damage. Highly recommend."
       },
       {
         "id": 4,
         "name": "James T.",
-        "position": "Business Owner",
-        "company": "DFW Metroplex",
+        "position": "Homeowner",
+        "company": "North Carolina",
         "avatar": "JT",
-        "text": "Called Palafox for an emergency restoration. They mobilized fast, protected our property, and had us back to normal without unnecessary delay."
+        "text": "Mercurial Roofing replaced our aging roof and installed seamless gutters. Honest workmanship, fair pricing, and fully insured across state lines. Great experience."
       },
       {
         "id": 5,
-        "name": "Palafox Team",
-        "position": "One Standard. Two Divisions.",
-        "company": "Palafox",
-        "avatar": "PX",
-        "text": "We built Palafox on one operating standard across two divisions. Whether you are building or restoring, the experience is equally clear, equally controlled, and equally accountable. Built to endure. Ready to restore."
+        "name": "Mercurial Roofing Team",
+        "position": "Fully Insured Multi-State Contractor",
+        "company": "Mercurial Roofing LLC",
+        "avatar": "MR",
+        "text": "We built Mercurial Roofing to protect what matters most for homeowners and businesses across five states. Superior materials, honest craftsmanship, and full insurance protection — every project, every time."
       }
     ],
     "videos": [
       {
         "id": "v1",
         "videoId": "dQw4w9WgXcQ",
-        "title": "24/7 Emergency Restoration",
+        "title": "Full Roof Replacement Walkthrough",
         "name": "Maria R."
       },
       {
         "id": "v2",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Roofing Project Walkthrough",
+        "title": "Storm Damage Insurance Claims",
         "name": "David K."
       },
       {
         "id": "v3",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Construction Group Project",
+        "title": "Emergency Leak Detection",
         "name": "Sarah L."
       },
       {
         "id": "v4",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Emergency Response Overview",
+        "title": "Gutters & Downspouts Installation",
         "name": "James T."
       }
     ],
     "stats": {
-      "reviewPlatform": "Google Reviews",
-      "satisfactionFocus": "4.9 Google Rating",
+      "reviewPlatform": "Google Verified • Yelp Official",
+      "satisfactionFocus": "100% Workmanship Guaranteed",
       "totalVideos": 12,
       "videoSection": {
         "badge": "Video Testimonials",
         "reviewCountText": "12 reviews on Google",
-        "googleReviewsLink": "https://maps.google.com/?q=Palafox+Construction+Dallas+TX",
+        "googleReviewsLink": "https://maps.google.com/?q=Mercurial+Roofing+LLC+Sugar+Hill+GA",
         "googleReviewsButtonText": "Read all 12 reviews on Google",
         "videoPlayerTitle": "YouTube video player"
       }
@@ -713,7 +731,7 @@
     "section": {
       "badge": "Knowledge Base",
       "headline": "Frequently Asked Questions",
-      "description": "Straight answers about our roofing, construction, and 24/7 emergency restoration services across the DFW Metroplex."
+      "description": "Straight answers about our roofing services, insurance claims, and multi-state coverage."
     },
     "categories": [
       {
@@ -727,134 +745,134 @@
         "icon": "Home"
       },
       {
-        "id": "construction",
-        "label": "Construction",
-        "icon": "Hammer"
+        "id": "claims",
+        "label": "Insurance Claims",
+        "icon": "Shield"
       },
       {
-        "id": "restoration",
-        "label": "Restoration",
-        "icon": "Shield"
+        "id": "coverage",
+        "label": "Coverage",
+        "icon": "MapPin"
       }
     ],
     "items": [
       {
         "id": 1,
-        "category": "restoration",
+        "category": "roofing",
+        "question": "What roofing services do you offer?",
+        "answer": "We offer full roof replacement, leak detection and flashing repair, storm and hail insurance claims, and gutters and downspouts. Every roof is engineered to withstand extreme weather, heavy downpours, wind gusts, and severe hail.",
+        "metadata": [
+          {
+            "label": "Replacement",
+            "value": "Full tear-off"
+          },
+          {
+            "label": "Gutters",
+            "value": "Seamless systems"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "category": "claims",
+        "question": "Do you help with insurance claims?",
+        "answer": "Yes. We provide detailed photographic damage documentation to ensure your insurance carrier approves the full scope required to restore your home to pre-loss condition.",
+        "metadata": [
+          {
+            "label": "Documentation",
+            "value": "Photographic"
+          },
+          {
+            "label": "Approval",
+            "value": "Full scope"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "category": "coverage",
+        "question": "What states do you serve?",
+        "answer": "We're headquartered in Sugar Hill, GA, with full insurance policy coverage extending across five states: Georgia, Maryland, Virginia, North Carolina, and South Carolina.",
+        "metadata": [
+          {
+            "label": "Headquarters",
+            "value": "Sugar Hill, GA"
+          },
+          {
+            "label": "Coverage",
+            "value": "5 states"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "category": "roofing",
         "question": "Do you offer 24/7 emergency response?",
-        "answer": "Yes. Our Restoration division responds 24/7 across the DFW Metroplex. Call (817) 232-3866 anytime — day or night — and we'll mobilize without unnecessary delay.",
+        "answer": "Yes. We provide 24/7 emergency leak response and emergency tarping service across our fully insured coverage states. Call (470) 323-6048 anytime.",
         "metadata": [
           {
             "label": "Response",
             "value": "24/7"
           },
           {
-            "label": "Coverage",
-            "value": "DFW Metroplex"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "category": "roofing",
-        "question": "What roofing services do you offer?",
-        "answer": "We handle residential and commercial roofing — new installations, repairs, and replacements. Precision workmanship built to endure Texas weather, backed by 15+ years in the field.",
-        "metadata": [
-          {
-            "label": "Residential",
-            "value": "Yes"
-          },
-          {
-            "label": "Commercial",
-            "value": "Yes"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "category": "construction",
-        "question": "What does your Construction Group do?",
-        "answer": "Our Construction Group handles planned property improvements with documented scopes, clear timelines, and direct communication from first call to final walkthrough.",
-        "metadata": [
-          {
-            "label": "Planning",
-            "value": "Documented scope"
-          },
-          {
-            "label": "Communication",
-            "value": "One point of contact"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "category": "restoration",
-        "question": "What areas do you serve?",
-        "answer": "We serve the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities across the Dallas-Fort Worth area.",
-        "metadata": [
-          {
-            "label": "Primary",
-            "value": "Dallas, TX"
-          },
-          {
-            "label": "Coverage",
-            "value": "Entire DFW Metroplex"
+            "label": "Service",
+            "value": "Emergency tarping"
           }
         ]
       },
       {
         "id": 5,
-        "category": "construction",
-        "question": "How does your process work?",
-        "answer": "Every project follows the same controlled process: Assess, Plan, Execute, Verify. On-site evaluation, documented scope, disciplined fieldwork, and a final walkthrough before we close the job.",
+        "category": "roofing",
+        "question": "Are you licensed and insured?",
+        "answer": "Yes. Mercurial Roofing LLC is fully insured with an active insurance policy that gives you full protection across entire states for residential and commercial roofing projects.",
         "metadata": [
           {
-            "label": "Step 1",
-            "value": "Assess"
+            "label": "Insured",
+            "value": "Yes — full policy"
           },
           {
-            "label": "Step 4",
-            "value": "Verify"
+            "label": "Coverage",
+            "value": "State-wide"
           }
         ]
       },
       {
         "id": 6,
         "category": "roofing",
-        "question": "Are you licensed and insured?",
-        "answer": "Yes. Palafox is fully licensed and insured. Your property and your investment are protected on every project, across both divisions.",
+        "question": "What does a free inspection include?",
+        "answer": "Our free inspection includes a comprehensive photographic report using high-resolution drone and roof photos detailing any storm impact or wear, followed by a clear, fixed-price estimate with material warranties and insurance guidance.",
         "metadata": [
           {
-            "label": "Licensed",
-            "value": "Yes"
+            "label": "Report",
+            "value": "Photographic"
           },
           {
-            "label": "Insured",
-            "value": "Yes"
+            "label": "Estimate",
+            "value": "Fixed-price"
           }
         ]
       },
       {
         "id": 7,
-        "category": "restoration",
-        "question": "How fast can you respond to an emergency?",
-        "answer": "Our field teams mobilize without unnecessary delay. Call (817) 232-3866 any time — 24/7 emergency response across the DFW Metroplex.",
+        "category": "roofing",
+        "question": "How fast can you respond?",
+        "answer": "We offer same-day dispatch confirmation and 24/7 emergency leak response. We reach out promptly to lock in a time that fits your schedule.",
         "metadata": [
           {
-            "label": "Response",
-            "value": "24/7"
+            "label": "Dispatch",
+            "value": "Same-day"
           },
           {
-            "label": "Mobilization",
-            "value": "Without unnecessary delay"
+            "label": "Emergency",
+            "value": "24/7"
           }
         ]
       },
       {
         "id": 8,
-        "category": "construction",
-        "question": "Do you handle both residential and commercial projects?",
-        "answer": "Yes. Palafox serves both residential and commercial property owners across the DFW Metroplex — roofing, construction, and restoration under one standard.",
+        "category": "roofing",
+        "question": "Do you handle residential and commercial projects?",
+        "answer": "Yes. We handle both residential and commercial roofing projects across all five covered states — full replacements, leak repair, storm claims, and gutters.",
         "metadata": [
           {
             "label": "Residential",
@@ -868,33 +886,33 @@
       },
       {
         "id": 9,
-        "category": "roofing",
-        "question": "Do you offer free estimates?",
-        "answer": "Yes. We provide free, no-obligation estimates on every project. Call (817) 232-3866 or start your request online to schedule.",
+        "category": "claims",
+        "question": "How do you document storm damage?",
+        "answer": "We use high-resolution drone and roof photos to create a detailed photographic report of any storm impact or wear. This documentation helps ensure your insurance carrier approves the full scope of restoration.",
         "metadata": [
           {
-            "label": "Cost",
-            "value": "Free"
+            "label": "Method",
+            "value": "Drone & roof photos"
           },
           {
-            "label": "Obligation",
-            "value": "None"
+            "label": "Purpose",
+            "value": "Full claim approval"
           }
         ]
       },
       {
         "id": 10,
-        "category": "restoration",
-        "question": "Will I have one point of contact?",
-        "answer": "Yes. From first call to final walkthrough, you'll have one point of contact. One accountable team owns the next step — no runaround, no confusion.",
+        "category": "coverage",
+        "question": "Do you have a physical office?",
+        "answer": "Yes. Our base is Sugar Hill, GA 30518. We operate state-wide across Georgia, Maryland, Virginia, North Carolina, and South Carolina.",
         "metadata": [
           {
-            "label": "Contact",
-            "value": "One point throughout"
+            "label": "Base",
+            "value": "Sugar Hill, GA 30518"
           },
           {
-            "label": "Accountability",
-            "value": "One team owns it"
+            "label": "Operations",
+            "value": "Multi-state"
           }
         ]
       }
@@ -905,15 +923,15 @@
     "knowledgeCard": {
       "badge": "STILL HAVE QUESTIONS?",
       "title": "Still Have Questions?",
-      "description": "Tell us what your property needs. From planned improvements to urgent recovery, we'll route your request to the right specialist.",
+      "description": "Tell us what your roof needs. From planned replacement to urgent recovery, we'll route your request to the right specialist.",
       "buttons": [
         {
           "text": "24/7 Emergency",
-          "href": "tel:+18172323866",
+          "href": "tel:+14703236048",
           "primary": true
         },
         {
-          "text": "Start Your Request",
+          "text": "Schedule Free Inspection",
           "href": "#contact",
           "primary": false
         }
@@ -936,42 +954,52 @@
   },
   "quote": {
     "section": {
-      "badge": "PALAFOX COMMAND CENTER",
-      "headline": "Tell Us What Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Property Needs</span>",
-      "description": "From planned improvements to urgent recovery, one accountable team owns the next step. Start here and we'll route your request to the right specialist."
+      "badge": "MERCURIAL COMMAND CENTER",
+      "headline": "Tell Us What Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Roof Needs</span>",
+      "description": "From planned replacements to urgent recovery, one accountable team owns the next step. Start here and we'll route your request to the right specialist."
     },
     "services": [
       {
         "id": 1,
-        "title": "Roofing",
-        "desc": "Precision roofing systems",
+        "title": "Roof Replacement",
+        "desc": "Full tear-off & install",
         "icon": "⌗"
       },
       {
         "id": 2,
-        "title": "Construction",
-        "desc": "Planned improvements",
+        "title": "Leak Repair & Flashing",
+        "desc": "Emergency response",
         "icon": "⎔"
       },
       {
         "id": 3,
-        "title": "Restoration",
-        "desc": "24/7 emergency response",
+        "title": "Storm Damage Claims",
+        "desc": "Insurance documentation",
         "icon": "⌖"
+      },
+      {
+        "id": 4,
+        "title": "Gutters & Downspouts",
+        "desc": "Seamless gutter systems",
+        "icon": "⌘"
       }
     ],
     "projectTypes": [
       {
-        "value": "roofing",
-        "label": "Roofing"
+        "value": "replacement",
+        "label": "Roof Replacement"
       },
       {
-        "value": "construction",
-        "label": "Construction"
+        "value": "leak",
+        "label": "Leak Repair"
       },
       {
-        "value": "restoration",
-        "label": "Restoration"
+        "value": "storm",
+        "label": "Storm Claim"
+      },
+      {
+        "value": "gutters",
+        "label": "Gutters"
       },
       {
         "value": "emergency",
@@ -996,7 +1024,7 @@
         "label": "Planned Project"
       }
     ],
-    "email": "info@palafoxroofing.com",
+    "email": "support@mercurialroofing.net",
     "stages": [
       {
         "number": 1,
@@ -1006,7 +1034,7 @@
       {
         "number": 2,
         "name": "Specification",
-        "desc": "Project scope"
+        "desc": "Roof scope"
       },
       {
         "number": 3,
@@ -1022,7 +1050,7 @@
       "servicesLabel": "Select Your Services",
       "classificationLabel": "Project classification",
       "timelineLabel": "Timeline horizon",
-      "messageLabel": "Describe your project vision, requirements, and challenges"
+      "messageLabel": "Describe your roof condition, symptoms, or project requirements"
     },
     "summary": {
       "title": "TRANSMISSION SUMMARY",
@@ -1030,23 +1058,23 @@
       "classificationLabel": "Classification",
       "timelineLabel": "Timeline",
       "responseLabel": "Response",
-      "responseTime": "4-8 hours"
+      "responseTime": "2-4 hours"
     },
     "buttons": {
       "previous": "Previous",
       "continue": "Continue",
-      "submitIdle": "Get Free Quote",
+      "submitIdle": "Schedule Free Inspection",
       "submitMobile": "Send",
       "submitting": "Transmitting..."
     },
     "consultationStat": {
       "number": "500+",
-      "label": "consultations"
+      "label": "inspections"
     },
     "success": {
-      "title": "Request Received",
-      "message": "Your project details have been sent to the Palafox Command Center.",
-      "response": "We'll respond promptly and route your request to the right specialist. One standard. Two divisions.",
+      "title": "Inspection Request Received",
+      "message": "Your project details have been sent to the Mercurial Roofing LLC Command Center.",
+      "response": "We'll respond promptly and route your request to the right specialist. Engineered roofing built to protect what matters most.",
       "buttonText": "Close"
     },
     "notSpecified": "Not specified",
@@ -1054,10 +1082,10 @@
   },
   "quickQuote": {
     "floatingButton": {
-      "label": "Get Free Quote"
+      "label": "Free Inspection"
     },
-    "title": "Quick Quote",
-    "subtitle": "Get your free estimate in minutes",
+    "title": "Quick Inspection",
+    "subtitle": "Get your free roof inspection in minutes",
     "steps": [
       {
         "number": 1,
@@ -1065,7 +1093,7 @@
       },
       {
         "number": 2,
-        "label": "Project"
+        "label": "Roof"
       },
       {
         "number": 3,
@@ -1078,127 +1106,125 @@
       "emailLabel": "Email Address",
       "emailPlaceholder": "john@example.com",
       "phoneLabel": "Phone Number",
-      "phonePlaceholder": "(817) 232-3866",
-      "projectTypeLabel": "Project Type",
-      "projectTypePlaceholder": "Select project type",
-      "messageLabel": "Tell us about your project",
-      "messagePlaceholder": "Briefly describe your roofing, construction, or restoration needs..."
+      "phonePlaceholder": "(470) 323-6048",
+      "projectTypeLabel": "Service Needed",
+      "projectTypePlaceholder": "Select service type",
+      "messageLabel": "Tell us about your roof",
+      "messagePlaceholder": "Briefly describe your roof age, visible leaks, or storm damage..."
     },
     "projectTypes": [
       {
-        "value": "roofing",
-        "label": "Roofing Systems & Repairs"
+        "value": "replacement",
+        "label": "Full Roof Replacement"
       },
       {
-        "value": "construction",
-        "label": "Construction Group & Remodel"
+        "value": "leak",
+        "label": "Leak Detection & Flashing"
       },
       {
-        "value": "restoration",
-        "label": "24/7 Emergency Restoration"
+        "value": "storm",
+        "label": "Storm & Hail Insurance Claim"
       },
       {
-        "value": "commercial",
-        "label": "Commercial Roofing & Building"
+        "value": "gutters",
+        "label": "Gutters & Downspouts"
       },
       {
         "value": "inspection",
-        "label": "Roof & Site Inspection"
+        "label": "Free Roof Inspection"
       },
       {
-        "value": "other",
-        "label": "Other Project"
+        "value": "emergency",
+        "label": "Emergency Tarping"
       }
     ],
     "buttons": {
       "back": "Back",
       "continue": "Continue",
-      "submit": "Get Quote",
+      "submit": "Schedule Inspection",
       "submitting": "Sending..."
     },
     "trustBadges": [
-      "Free estimate",
-      "4-8h response",
-      "Locally owned"
+      "Free inspection",
+      "2-4h response",
+      "Fully insured"
     ],
     "success": {
-      "title": "Quote Request Sent!",
-      "message": "We'll respond within 4-8 hours."
+      "title": "Inspection Request Sent!",
+      "message": "We'll respond within 2-4 hours."
     }
   },
   "footer": {
     "company": {
-      "name": "PALAFOX",
-      "subTitle": "CONSTRUCTION & ROOFING",
-      "tagline": "ONE STANDARD. TWO DIVISIONS.",
-      "licenseBadge": "Texas Licensed & Fully Insured",
-      "description": "Licensed and insured roofing, construction, and 24/7 emergency restoration serving the entire DFW Metroplex. Built to endure. Ready to restore."
+      "name": "MERCURIAL ROOFING",
+      "subTitle": "LLC • Sugar Hill, Georgia",
+      "tagline": "ENGINEERED ROOFING BUILT TO PROTECT WHAT MATTERS MOST.",
+      "licenseBadge": "Fully Insured • Multi-State Coverage",
+      "description": "Official website of Mercurial Roofing LLC. Fully insured roofing contractor covering Georgia, Maryland, Virginia, North Carolina, and South Carolina. Residential and commercial roofing solutions backed by superior materials, honest craftsmanship, and full insurance policy protection."
     },
     "emergencyBar": {
-      "title": "Immediate Scope or Emergency Dispatch Needed?",
+      "title": "Immediate Roof Support or Emergency Dispatch Needed?",
       "badge": "Crews on Standby",
-      "subtitle": "24/7 rapid response across Dallas, Trophy Club, Keller & all DFW communities.",
-      "phone": "(817) 232-3866",
-      "phoneLink": "tel:+18172323866",
-      "ctaText": "Request Scope",
+      "subtitle": "24/7 rapid response across all 5 fully insured coverage states.",
+      "phone": "(470) 323-6048",
+      "phoneLink": "tel:+14703236048",
+      "ctaText": "Schedule Free Inspection",
       "ctaLink": "#contact"
     },
     "divisions": {
-      "title": "Core Divisions",
+      "title": "Core Services",
       "items": [
         {
-          "label": "Residential Roofing Systems",
+          "label": "Full Roof Replacement",
           "href": "#services",
           "icon": "Home"
         },
         {
-          "label": "Commercial Flat & Metal Roofs",
-          "href": "#services",
-          "icon": "Building2"
-        },
-        {
-          "label": "Planned Construction Group",
-          "href": "#services",
-          "icon": "Hammer"
-        },
-        {
-          "label": "24/7 Disaster Restoration",
+          "label": "Leak Detection & Flashing",
           "href": "#services",
           "icon": "AlertTriangle"
         },
         {
-          "label": "Storm & Hail Scopes",
+          "label": "Storm & Hail Insurance Claims",
           "href": "#services",
           "icon": "Shield"
         },
         {
-          "label": "Diagnostic Roof Inspections",
+          "label": "Gutters & Downspouts",
+          "href": "#services",
+          "icon": "Droplets"
+        },
+        {
+          "label": "Emergency Tarping",
           "href": "#services",
           "icon": "CheckCircle2"
+        },
+        {
+          "label": "Free Roof Inspections",
+          "href": "#services",
+          "icon": "FileText"
         }
       ]
     },
     "serviceAreas": {
-      "title": "Service Areas",
+      "title": "Covered States",
       "items": [
-        "Dallas, TX",
-        "Trophy Club, TX",
-        "Keller, TX",
-        "Fort Worth, TX",
-        "Southlake, TX",
-        "Westlake, TX",
-        "Colleyville, TX",
-        "DFW Metroplex"
+        "Georgia",
+        "Maryland",
+        "Virginia",
+        "North Carolina",
+        "South Carolina",
+        "Sugar Hill, GA HQ"
       ]
     },
     "contact": {
       "title": "Command Center",
-      "phone": "(817) 232-3866",
+      "phone": "(470) 323-6048",
       "phoneLabel": "Direct Line & 24/7 Emergency",
-      "phoneLink": "tel:+18172323866",
-      "email": "info@palafoxroofing.com",
+      "phoneLink": "tel:+14703236048",
+      "email": "support@mercurialroofing.net",
       "emailLabel": "Estimates & Inquiries",
-      "emailLink": "mailto:info@palafoxroofing.com",
+      "emailLink": "mailto:support@mercurialroofing.net",
       "hoursTitle": "Operating Schedule",
       "schedule": [
         {
@@ -1218,35 +1244,35 @@
     },
     "certifications": [
       {
-        "title": "Licensed & Insured",
-        "subtitle": "Full Texas Coverage",
+        "title": "100% Workmanship",
+        "subtitle": "Guaranteed",
         "icon": "Award"
       },
       {
-        "title": "4.9 ★ Client Rating",
-        "subtitle": "Verified Google Reviews",
-        "icon": "Star"
+        "title": "24/7 Emergency",
+        "subtitle": "Leak Response",
+        "icon": "Clock"
       },
       {
-        "title": "1,200+ Projects",
-        "subtitle": "DFW Builds Delivered",
-        "icon": "Building2"
+        "title": "5 States",
+        "subtitle": "Full Insurance Coverage",
+        "icon": "MapPin"
       },
       {
-        "title": "Workmanship Backed",
-        "subtitle": "Written Warranty Guarantee",
+        "title": "Google Verified",
+        "subtitle": "Yelp Official",
         "icon": "ShieldCheck"
       }
     ],
     "social": [
       {
         "label": "Direct Phone",
-        "href": "tel:+18172323866",
+        "href": "tel:+14703236048",
         "icon": "Phone"
       },
       {
         "label": "Email Dispatch",
-        "href": "mailto:info@palafoxroofing.com",
+        "href": "mailto:support@mercurialroofing.net",
         "icon": "Mail"
       },
       {
@@ -1266,8 +1292,8 @@
       }
     ],
     "bottom": {
-      "copyright": "© 2026 Palafox Construction. All rights reserved.",
-      "tagline": "ONE STANDARD. TWO DIVISIONS.",
+      "copyright": "© 2026 Mercurial Roofing LLC. All rights reserved.",
+      "tagline": "ENGINEERED ROOFING BUILT TO PROTECT WHAT MATTERS MOST.",
       "backToTop": "Top",
       "links": [
         {
@@ -1279,46 +1305,46 @@
           "href": "/terms"
         },
         {
-          "label": "Emergency Dispatch",
+          "label": "Free Inspection",
           "href": "#contact"
         }
       ]
     },
     "marquee": {
       "texts": [
-        "BUILT TO ENDURE. READY TO RESTORE.",
-        "ONE STANDARD • TWO DIVISIONS • 24/7 DFW RESPONSE",
-        "SERVING DALLAS, TROPHY CLUB, KELLER & ENTIRE DFW • (817) 232-3866"
+        "ENGINEERED ROOFING BUILT TO PROTECT WHAT MATTERS MOST.",
+        "100% WORKMANSHIP GUARANTEED • 24/7 EMERGENCY RESPONSE",
+        "5 STATES • FULLY INSURED • (470) 323-6048"
       ]
     }
   },
   "leadership": {
     "section": {
       "badge": "OUR LEADERSHIP",
-      "headline": "Accountability <span class=\"text-primary\">Is The Standard.</span>",
-      "description": "At Palafox, our leadership is driven by a singular mission: to hold one operating standard across both divisions — so whether you are building or recovering, the experience is equally clear and equally controlled."
+      "headline": "Engineered Roofing. <span class=\"text-primary\">Honest Craftsmanship.</span>",
+      "description": "At Mercurial Roofing LLC, our leadership is driven by a singular mission: to deliver roofing solutions backed by superior materials, honest craftsmanship, and full insurance policy protection across every state we serve."
     },
     "ceo": {
-      "name": "David K.",
-      "title": "ONE STANDARD. TWO DIVISIONS.",
+      "name": "Mercurial Roofing Team",
+      "title": "FULLY INSURED MULTI-STATE CONTRACTOR",
       "quotes": [
-        "We built Palafox on one operating standard across two divisions. Whether you are building or restoring, the experience is equally clear, equally controlled, and equally accountable. Built to endure. Ready to restore."
+        "We built Mercurial Roofing to protect what matters most for homeowners and businesses across five states. Superior materials, honest craftsmanship, and full insurance protection — every project, every time."
       ],
       "description": [
-        "Palafox was founded with one accountable team for the property you are building — and the one you need to protect. Our Construction Group handles planned improvements with precision, documented scopes, and direct communication. Our Restoration division responds 24/7 without unnecessary delay when disaster strikes. Two divisions. One standard. No runaround.",
-        "Today, Palafox proudly serves the entire DFW Metroplex — Dallas, Trophy Club, Keller, and surrounding communities — with over 1,200 projects delivered, a 4.9 Google rating, and 15+ years in the field. Licensed and insured. Workmanship backed. One point of contact from first call to final walkthrough. Put the right team on your property."
+        "Mercurial Roofing LLC was founded on a simple principle: every roof should be engineered to protect what matters most. Headquartered in Sugar Hill, Georgia, we built our company with a direct-dispatch model and a fully insured multi-state operation. No high-pressure sales tactics. No cutting corners on materials. Just honest, photographic diagnoses followed by clear, fixed-price estimates backed by material warranties and full insurance guidance.",
+        "Today, Mercurial Roofing LLC proudly serves residential and commercial clients across five states — Georgia, Maryland, Virginia, North Carolina, and South Carolina — with state-wide insured coverage and 24/7 emergency leak response. From full roof replacement and leak detection to storm and hail insurance claims and seamless gutters, we handle every project with the same disciplined standard. Google Verified. Yelp Official. Committed to protecting your property like it's our own."
       ],
       "social": {
         "facebook": "#",
         "instagram": "#",
         "linkedin": "#",
-        "email": "info@palafoxroofing.com"
+        "email": "support@mercurialroofing.net"
       },
       "badges": {
-        "top": "Licensed & Insured",
-        "bottom": "DFW Metroplex Proud"
+        "top": "Fully Insured",
+        "bottom": "Multi-State Coverage"
       },
-      "alt": "Palafox Team - One Standard. Two Divisions."
+      "alt": "Mercurial Roofing LLC Team - Fully Insured Multi-State Contractor"
     }
   },
   "notFound": {

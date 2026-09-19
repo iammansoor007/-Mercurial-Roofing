@@ -742,7 +742,7 @@ const GetQuote = () => {
       .join(", ");
 
     const emailContent = `
-🏗️ Palafox Construction Quote Request
+🏗️ Mercurial Roofing LLC Inspection Request
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -762,14 +762,14 @@ ${formData.message}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏱️ Submitted: ${new Date().toLocaleString()}
-Locally Owned & Operated
+Fully Insured • Multi-State Coverage
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     `;
 
     try {
       try {
         const response = await fetch(
-          "https://formsubmit.co/ajax/info@palafoxroofing.com",
+          "https://formsubmit.co/ajax/support@mercurialroofing.net",
           {
             method: "POST",
             headers: {
@@ -777,7 +777,7 @@ Locally Owned & Operated
               Accept: "application/json",
             },
             body: JSON.stringify({
-              _subject: `🏗️ Palafox Construction Quote Request - ${formData.name}`,
+              _subject: `🏗️ Mercurial Roofing LLC Inspection Request - ${formData.name}`,
               name: formData.name,
               email: formData.email,
               phone: formData.phone,
@@ -816,7 +816,7 @@ Locally Owned & Operated
         console.log("FormSubmit failed, using mailto fallback");
       }
 
-      window.location.href = `mailto:${email}?subject=🏗️ Palafox Construction Quote Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+      window.location.href = `mailto:${email}?subject=🏗️ Mercurial Roofing LLC Inspection Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
       setShowSuccess(true);
       setFormStep(1);
       setSelectedServices([]);

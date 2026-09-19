@@ -57,20 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Brand Color Tokens (Palafox Scheme - dynamically linked to global CSS variables)
-        palafoxBlue: "var(--primary-hex)",
+        // Brand Color Tokens (Mercurial Theme)
+        deepNavy: "#0B1D33",
+        steelBlue: "#344B63",
+        midnightNavy: "#06111F",
+        coolWhite: "#F4F6F8",
+        lightSteelGray: "#D9E0E7",
+        charcoal: "#17212B",
+        metallicSilver: "#AEB8C2",
+        strongNavy: "#12365A",
+
+        // Dynamically linked CSS variables
         deepBlue: "var(--primary-hover-hex)",
         brandBlack: "var(--heading-color)",
         offWhite: "var(--dark-bg)",
         pureWhite: "var(--white-color)",
         softGray: "var(--border-color)",
         darkNavy: "var(--navy-color)",
-
-        // Backward compatibility mappings
-        vividOrange: "var(--primary-hex)",
-        deepOrange: "var(--primary-hover-hex)",
-        lightGray: "var(--dark-bg)",
-        charcoalText: "var(--heading-color)",
 
         // Dynamic Brand Theme Aliases
         dark: "var(--dark-bg)",
