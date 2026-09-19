@@ -12,6 +12,8 @@ import {
   Hammer,
   AlertTriangle,
   Zap,
+  MapPin,
+  Droplets,
 } from "lucide-react";
 import roofingBg from "@/assets/p2.png";
 import completeData from "../src/data/completeData.json";
@@ -24,6 +26,9 @@ const heroIconMap: Record<string, React.ElementType> = {
   Home,
   Hammer,
   AlertTriangle,
+  MapPin,
+  Droplets,
+  Phone,
 };
 
 const Hero = () => {
@@ -151,17 +156,18 @@ const Hero = () => {
               style={{ fontFamily: "var(--font-heading)", color: "var(--white-color)" }}
             >
               <span className="block">{headlines[0]}</span>
-              {headlines[1] && (
+              {headlines.slice(1).map((hl, idx) => (
                 <span
+                  key={idx}
                   className="block mt-1 text-transparent bg-clip-text"
                   style={{
                     backgroundImage:
-                      "linear-gradient(135deg, var(--primary-hex) 0%, var(--primary-hover-hex) 100%)",
+                      "linear-gradient(135deg, #FFFFFF 0%, var(--accent-hex) 60%, #FFFFFF 100%)",
                   }}
                 >
-                  {headlines[1]}
+                  {hl}
                 </span>
-              )}
+              ))}
             </motion.h1>
 
             {/* Sub-headline / Brand Promise */}
@@ -191,9 +197,10 @@ const Hero = () => {
                   className="relative group px-8 py-4 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-3 shadow-2xl transition-all duration-300"
                   style={{
                     background:
-                      "linear-gradient(135deg, var(--primary-hex) 0%, var(--primary-hover-hex) 100%)",
+                      "linear-gradient(135deg, var(--cta-hex) 0%, var(--secondary-hex) 100%)",
                     color: "var(--white-color)",
-                    boxShadow: "0 10px 30px rgba(var(--primary-rgb), 0.4)",
+                    border: "1px solid rgba(174, 184, 194, 0.4)",
+                    boxShadow: "0 10px 30px rgba(18, 54, 90, 0.6)",
                   }}
                 >
                   <div className="w-2.5 h-2.5 rounded-full animate-ping" style={{ background: "var(--white-color)" }} />
@@ -210,8 +217,8 @@ const Hero = () => {
                   whileTap={{ scale: 0.97 }}
                   className="px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 border transition-all duration-300"
                   style={{
-                    background: "rgba(var(--white-rgb), 0.08)",
-                    borderColor: "rgba(var(--white-rgb), 0.25)",
+                    background: "rgba(var(--white-rgb), 0.12)",
+                    borderColor: "rgba(var(--white-rgb), 0.35)",
                     color: "var(--white-color)",
                   }}
                 >
@@ -235,19 +242,19 @@ const Hero = () => {
                   return (
                     <div
                       key={i}
-                      className="p-3.5 rounded-xl border backdrop-blur-sm flex flex-col items-center lg:items-start text-center lg:text-left transition-all duration-300 hover:border-primary/50"
+                      className="p-3.5 rounded-xl border backdrop-blur-sm flex flex-col items-center lg:items-start text-center lg:text-left transition-all duration-300 hover:border-accent/50"
                       style={{
                         background: "rgba(var(--navy-rgb), 0.55)",
-                        borderColor: "rgba(var(--white-rgb), 0.08)",
+                        borderColor: "rgba(var(--white-rgb), 0.12)",
                       }}
                     >
                       <div className="flex items-center gap-1.5 mb-1">
                         <IconComponent
-                          className="w-4 h-4"
-                          style={{ color: "var(--primary-hex)" }}
+                          className="w-4 h-4 shrink-0"
+                          style={{ color: "var(--accent-hex)" }}
                         />
                         <span
-                          className="text-lg sm:text-xl font-black tracking-tight leading-none"
+                          className="text-base sm:text-xl font-black tracking-tight leading-none whitespace-nowrap"
                           style={{ color: "var(--white-color)" }}
                         >
                           {item.value}
@@ -255,7 +262,7 @@ const Hero = () => {
                       </div>
                       <span
                         className="text-[11px] font-medium leading-tight"
-                        style={{ color: "var(--light-silver-color)" }}
+                        style={{ color: "var(--accent-hex)" }}
                       >
                         {item.label}
                       </span>
@@ -325,7 +332,7 @@ const Hero = () => {
                     >
                       {estimateCard.divisionLabel}
                     </label>
-                    <div className="grid grid-cols-3 gap-2">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                       {estimateCard.divisions.map((div) => {
                         const DivIcon = heroIconMap[div.icon] || Home;
                         const isActive = activeDivision === div.key;
@@ -337,12 +344,12 @@ const Hero = () => {
                             className="flex flex-col items-center justify-center p-2.5 rounded-xl border text-xs font-bold transition-all duration-200 cursor-pointer"
                             style={{
                               background: isActive
-                                ? "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))"
-                                : "var(--dark-bg)",
-                              color: isActive ? "var(--white-color)" : "var(--heading-color)",
-                              borderColor: isActive ? "var(--primary-hex)" : "var(--border-color)",
+                                ? "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))"
+                                : "var(--card-bg)",
+                              color: isActive ? "var(--white-color)" : "var(--charcoal-hex)",
+                              borderColor: isActive ? "var(--cta-hex)" : "var(--border-color)",
                               boxShadow: isActive
-                                ? "0 4px 14px rgba(var(--primary-rgb), 0.25)"
+                                ? "0 4px 14px rgba(18, 54, 90, 0.35)"
                                 : "none",
                             }}
                           >
@@ -463,9 +470,9 @@ const Hero = () => {
                       className="w-full py-4 rounded-xl font-black text-sm uppercase tracking-wider transition-all duration-300 shadow-xl flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02]"
                       style={{
                         background:
-                          "linear-gradient(135deg, var(--primary-hex) 0%, var(--primary-hover-hex) 100%)",
+                          "linear-gradient(135deg, var(--cta-hex) 0%, var(--secondary-hex) 100%)",
                         color: "var(--white-color)",
-                        boxShadow: "0 8px 24px rgba(var(--primary-rgb), 0.35)",
+                        boxShadow: "0 8px 24px rgba(18, 54, 90, 0.45)",
                       }}
                     >
                       {isSubmitting ? (

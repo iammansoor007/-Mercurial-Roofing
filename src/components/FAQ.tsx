@@ -120,7 +120,7 @@ const ANIMATION_VARIANTS = {
   },
 };
 
-const TrustBadge = ({ label, color }: { label: string; color: string }) => {
+const TrustBadge = ({ label, color }: { label: string; color?: string }) => {
   return (
     <div
       className="flex items-center gap-1.5 px-3 py-1 rounded-full backdrop-blur-sm"
@@ -132,7 +132,7 @@ const TrustBadge = ({ label, color }: { label: string; color: string }) => {
       <div
         className="w-1.5 h-1.5 rounded-full"
         style={{
-          background: color === "blue" || color === "primary" ? "var(--primary-hex)" : "var(--primary-hover-hex)",
+          background: "var(--accent-hex)",
         }}
       />
       <span
@@ -566,11 +566,11 @@ const KnowledgeCard = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
                     className={`
-                      px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg
+                      px-8 py-3.5 rounded-full font-black transition-all duration-300 shadow-xl
                       flex items-center gap-2
                       ${button.primary
-                        ? 'bg-primary text-white hover:bg-secondary shadow-[0_10px_40px_rgba(var(--black-rgb),0.3)]'
-                        : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5 backdrop-blur-sm'
+                        ? 'bg-white text-heading hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
+                        : 'bg-white/10 text-white border border-white/30 hover:bg-white/20 backdrop-blur-sm'
                       }
                     `}
                   >
@@ -663,11 +663,11 @@ const KnowledgeCard = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   className={`
-                    px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-lg
+                    px-6 py-3 rounded-full font-black transition-all duration-300 shadow-xl
                     flex items-center justify-center gap-2
                     ${button.primary
-                      ? 'bg-primary text-white hover:bg-secondary'
-                      : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5'
+                      ? 'bg-white text-heading hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
+                      : 'bg-white/10 text-white border border-white/30 hover:bg-white/20'
                     }
                   `}
                 >

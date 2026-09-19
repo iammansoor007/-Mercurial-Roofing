@@ -216,7 +216,7 @@ const TestimonialCard = ({
         {/* Footer */}
         <div className="flex items-center justify-between gap-6 pt-8 border-t border-border mt-auto">
           <div className="flex items-center gap-4 min-w-0">
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-none bg-primary flex items-center justify-center text-dark font-black text-lg md:text-xl shadow-lg flex-shrink-0">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl bg-primary flex items-center justify-center text-white font-black text-lg md:text-xl shadow-lg flex-shrink-0">
               {testimonial.avatar}
             </div>
             <div className="min-w-0">
@@ -236,7 +236,7 @@ const TestimonialCard = ({
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => onPlayVideo(testimonial.videoId, testimonial.name)}
-              className="group w-12 h-12 md:w-14 md:h-14 bg-primary text-dark rounded-none flex items-center justify-center shadow-xl border border-primary/20 flex-shrink-0 hover:bg-secondary hover:text-white transition-colors duration-300"
+              className="group w-12 h-12 md:w-14 md:h-14 bg-cta text-white rounded-xl flex items-center justify-center shadow-xl border border-white/20 flex-shrink-0 hover:bg-secondary hover:text-white transition-colors duration-300"
             >
               <Icons.Play />
             </motion.button>

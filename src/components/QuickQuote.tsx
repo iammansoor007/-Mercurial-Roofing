@@ -234,10 +234,10 @@ Fully Insured • Multi-State Coverage
                         }}
                         className="relative z-10"
                     >
-                        <Flag className="w-7 h-7 md:w-9 md:h-9 text-dark" />
+                        <Flag className="w-7 h-7 md:w-9 md:h-9 text-white" />
                     </motion.div>
 
-                    <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full border-2 border-dark" style={{ background: "var(--primary-hex)" }} />
+                    <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full border-2 border-white" style={{ background: "var(--accent-hex)" }} />
 
                     <AnimatePresence>
                         {isHovered && (
@@ -587,7 +587,7 @@ Fully Insured • Multi-State Coverage
                                                     <motion.button
                                                         type="button"
                                                         onClick={() => setStep(step + 1)}
-                                                        className="ml-auto px-8 py-3 bg-primary text-dark text-sm font-medium rounded-xl shadow-lg shadow-primary/20 hover:bg-secondary hover:text-white transition-all duration-300 flex items-center gap-2"
+                                                        className="ml-auto px-8 py-3 bg-cta text-white text-sm font-black rounded-xl shadow-lg shadow-black/20 hover:bg-secondary hover:text-white transition-all duration-300 flex items-center gap-2 cursor-pointer"
                                                         whileHover={{ scale: 1.02, x: 3 }}
                                                         whileTap={{ scale: 0.98 }}
                                                     >
@@ -598,13 +598,13 @@ Fully Insured • Multi-State Coverage
                                                     <motion.button
                                                         type="submit"
                                                         disabled={isSubmitting}
-                                                        className="ml-auto px-8 py-3 bg-primary text-dark text-sm font-medium rounded-xl shadow-lg shadow-primary/20 hover:bg-secondary hover:text-white transition-all duration-300 disabled:opacity-50 flex items-center gap-2"
+                                                        className="ml-auto px-8 py-3 bg-cta text-white text-sm font-black rounded-xl shadow-lg shadow-black/20 hover:bg-secondary hover:text-white transition-all duration-300 disabled:opacity-50 flex items-center gap-2 cursor-pointer"
                                                         whileHover={{ scale: 1.02 }}
                                                         whileTap={{ scale: 0.98 }}
                                                     >
                                                         {isSubmitting ? (
                                                             <>
-                                                                <div className="w-4 h-4 border-2 border-dark border-t-transparent rounded-full animate-spin" />
+                                                                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                                                                 {quickQuoteData.buttons.submitting}
                                                             </>
                                                         ) : (

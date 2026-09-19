@@ -23,12 +23,18 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 // ── Animated Number ───────────────────────────────────────────────
-const AnimatedNumber = ({ value, suffix = "" }: { value: number; suffix: string }) => {
+const AnimatedNumber = ({ value, suffix = "" }: { value: number | string; suffix: string }) => {
   const ref = useRef<HTMLSpanElement>(null);
-  const [display, setDisplay] = useState(0);
+  const isNum = typeof value === "number" || (!isNaN(Number(value)) && typeof value !== "boolean");
+  const numValue = isNum ? Number(value) : 0;
+  const [display, setDisplay] = useState<number | string>(isNum ? 0 : value);
   const started = useRef(false);
 
   useEffect(() => {
+    if (!isNum) {
+      setDisplay(value);
+      return;
+    }
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(([entry]) => {
@@ -38,18 +44,18 @@ const AnimatedNumber = ({ value, suffix = "" }: { value: number; suffix: string 
         const run = (ts: number) => {
           if (!t0) t0 = ts;
           const p = Math.min((ts - t0) / 2000, 1);
-          setDisplay(Math.floor(value * (1 - Math.pow(1 - p, 3))));
+          setDisplay(Math.floor(numValue * (1 - Math.pow(1 - p, 3))));
           if (p < 1) requestAnimationFrame(run);
-          else setDisplay(value);
+          else setDisplay(numValue);
         };
         requestAnimationFrame(run);
       }
     }, { threshold: 0.5 });
     obs.observe(el);
     return () => obs.disconnect();
-  }, [value]);
+  }, [numValue, isNum, value]);
 
-  return <span ref={ref} className="tabular-nums">{display}{suffix}</span>;
+  return <span ref={ref} className="tabular-nums">{typeof display === "number" ? display.toLocaleString() : display}{suffix}</span>;
 };
 
 // ── Service Card ──────────────────────────────────────────────────
@@ -215,164 +221,174 @@ const Services = () => {
         </div>
 
         {/* ══ SERVICES GRID ══════════════════════════════════════ */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mb-12 md:mb-16">
           {services.map((service: any, index: number) => {
-            const isOrphan = services.length % 3 === 1 && index === services.length - 1;
             return (
-              <ServiceCard key={service.number} service={service} index={index} orphan={isOrphan} />
+              <ServiceCard key={service.number} service={service} index={index} orphan={false} />
             );
           })}
         </div>
 
         {/* ══ PREMIUM CTA BANNER ═══════════════════════════════ */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65 }}
-          className="relative overflow-hidden rounded-3xl"
-          style={{
-            background: "linear-gradient(135deg, var(--navy-color) 0%, var(--primary-hover-hex) 100%)",
-            border: "1px solid rgba(var(--primary-rgb), 0.25)",
-            boxShadow: "0 25px 60px rgba(var(--navy-rgb), 0.25)",
-          }}
-        >
-          {/* Accent top line */}
-          <div
-            className="absolute top-0 left-0 right-0 h-[3px]"
-            style={{ background: "linear-gradient(90deg, transparent, var(--primary-hex), transparent)" }}
-          />
+        {(() => {
+          const ctaBadge = cta.badge || "Multi-State Dispatch Available";
+          const ctaPhone = cta.phone || "(470) 323-6048";
+          const ctaPhoneLink = cta.phoneLink || "tel:+14703236048";
+          const ctaDivider = cta.dividerText || "Or Call Direct";
+          const ctaTrustBadges = cta.trustBadges || ["Fully Insured", "24/7 Leak Response", "Free Inspections"];
 
-          {/* Ambient glow */}
-          <div
-            className="absolute -top-32 -left-32 w-80 h-80 rounded-full blur-3xl pointer-events-none"
-            style={{ background: "rgba(var(--primary-rgb), 0.1)" }}
-          />
-          <div
-            className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full blur-3xl pointer-events-none"
-            style={{ background: "rgba(var(--navy-rgb), 0.2)" }}
-          />
+          return (
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.65 }}
+              className="relative overflow-hidden rounded-3xl"
+              style={{
+                background: "linear-gradient(135deg, var(--navy-color) 0%, var(--primary-hover-hex) 100%)",
+                border: "1px solid rgba(var(--primary-rgb), 0.25)",
+                boxShadow: "0 25px 60px rgba(var(--navy-rgb), 0.25)",
+              }}
+            >
+              {/* Accent top line */}
+              <div
+                className="absolute top-0 left-0 right-0 h-[3px]"
+                style={{ background: "linear-gradient(90deg, transparent, var(--accent-hex), transparent)" }}
+              />
 
-          {/* Technical blueprint grid overlay */}
-          <div
-            className="absolute inset-0 opacity-[0.05] pointer-events-none"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(var(--white-rgb), 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--white-rgb), 0.2) 1px, transparent 1px)",
-              backgroundSize: "44px 44px",
-            }}
-          />
+              {/* Ambient glow */}
+              <div
+                className="absolute -top-32 -left-32 w-80 h-80 rounded-full blur-3xl pointer-events-none"
+                style={{ background: "rgba(174, 184, 194, 0.15)" }}
+              />
+              <div
+                className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full blur-3xl pointer-events-none"
+                style={{ background: "rgba(18, 54, 90, 0.3)" }}
+              />
 
-          <div className="relative z-10 px-8 py-12 md:px-14 md:py-16">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
+              {/* Technical blueprint grid overlay */}
+              <div
+                className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(rgba(var(--white-rgb), 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--white-rgb), 0.2) 1px, transparent 1px)",
+                  backgroundSize: "44px 44px",
+                }}
+              />
 
-              {/* ── Left: Editorial Headline Block ── */}
-              <div className="flex-1 max-w-2xl text-center lg:text-left">
-                {/* Badge */}
-                <div
-                  className="inline-flex items-center gap-2.5 mb-6 rounded-full px-4 py-1.5 backdrop-blur-sm"
-                  style={{
-                    background: "rgba(var(--primary-rgb), 0.12)",
-                    border: "1px solid rgba(var(--primary-rgb), 0.3)",
-                  }}
-                >
-                  <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--primary-hex)" }} />
-                  <span
-                    className="text-[11px] font-black uppercase tracking-[0.25em]"
-                    style={{ color: "var(--primary-hex)" }}
-                  >
-                    {cta.badge}
-                  </span>
-                </div>
+              <div className="relative z-10 px-8 py-12 md:px-14 md:py-16">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
 
-                {/* Big headline */}
-                <h3
-                  className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.08] mb-5"
-                  style={{ color: "var(--white-color)", fontFamily: "var(--font-heading)" }}
-                >
-                  {cta.title}
-                </h3>
-
-                <p
-                  className="text-base sm:text-lg leading-relaxed max-w-lg font-medium mx-auto lg:mx-0"
-                  style={{ color: "var(--light-silver-color)" }}
-                >
-                  {cta.description}
-                </p>
-
-                {/* Trust ribbon */}
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                  {(cta.trustBadges || []).map((t: string) => (
+                  {/* ── Left: Editorial Headline Block ── */}
+                  <div className="flex-1 max-w-2xl text-center lg:text-left">
+                    {/* Badge */}
                     <div
-                      key={t}
-                      className="flex items-center gap-2 px-3.5 py-1.5 rounded-full backdrop-blur-md"
+                      className="inline-flex items-center gap-2.5 mb-6 rounded-full px-4 py-1.5 backdrop-blur-sm"
                       style={{
-                        background: "rgba(var(--white-rgb), 0.08)",
-                        border: "1px solid rgba(var(--white-rgb), 0.15)",
+                        background: "rgba(255, 255, 255, 0.1)",
+                        border: "1px solid rgba(174, 184, 194, 0.35)",
                       }}
                     >
-                      <CheckCircle className="w-3.5 h-3.5 shrink-0" style={{ color: "var(--primary-hex)" }} />
+                      <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--accent-hex)" }} />
                       <span
-                        className="text-xs font-bold uppercase tracking-wider"
+                        className="text-[11px] font-black uppercase tracking-[0.25em]"
                         style={{ color: "var(--white-color)" }}
                       >
-                        {t}
+                        {ctaBadge}
                       </span>
                     </div>
-                  ))}
+
+                    {/* Big headline */}
+                    <h3
+                      className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.08] mb-5"
+                      style={{ color: "var(--white-color)", fontFamily: "var(--font-heading)" }}
+                    >
+                      {cta.title}
+                    </h3>
+
+                    <p
+                      className="text-base sm:text-lg leading-relaxed max-w-lg font-medium mx-auto lg:mx-0"
+                      style={{ color: "var(--light-silver-color)" }}
+                    >
+                      {cta.description}
+                    </p>
+
+                    {/* Trust ribbon */}
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+                      {ctaTrustBadges.map((t: string) => (
+                        <div
+                          key={t}
+                          className="flex items-center gap-2 px-3.5 py-1.5 rounded-full backdrop-blur-md"
+                          style={{
+                            background: "rgba(var(--white-rgb), 0.08)",
+                            border: "1px solid rgba(var(--white-rgb), 0.15)",
+                          }}
+                        >
+                          <CheckCircle className="w-3.5 h-3.5 shrink-0 text-white" />
+                          <span
+                            className="text-xs font-bold uppercase tracking-wider"
+                            style={{ color: "var(--white-color)" }}
+                          >
+                            {t}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ── Right: Action Stack ── */}
+                  <div className="flex flex-col gap-4 w-full lg:w-[300px] shrink-0 lg:pt-2">
+                    {/* Primary CTA */}
+                    <motion.a
+                      href={cta.buttonLink}
+                      whileHover={{ scale: 1.03, y: -2 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="group relative w-full flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest overflow-hidden transition-all duration-300 shadow-2xl"
+                      style={{
+                        background: "#FFFFFF",
+                        color: "var(--primary-hex)",
+                        boxShadow: "0 16px 40px rgba(0, 0, 0, 0.35)",
+                      }}
+                    >
+                      <span className="relative z-10 font-black">{cta.buttonText}</span>
+                      <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+                    </motion.a>
+
+                    {/* Divider label */}
+                    <div className="flex items-center gap-3 my-1">
+                      <div className="flex-1 h-px" style={{ background: "rgba(var(--white-rgb), 0.15)" }} />
+                      <span
+                        className="text-[10px] font-black uppercase tracking-widest"
+                        style={{ color: "var(--light-silver-color)" }}
+                      >
+                        {ctaDivider}
+                      </span>
+                      <div className="flex-1 h-px" style={{ background: "rgba(var(--white-rgb), 0.15)" }} />
+                    </div>
+
+                    {/* Direct Call Button */}
+                    <motion.a
+                      href={ctaPhoneLink}
+                      whileHover={{ scale: 1.02, y: -1 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="group w-full flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-300"
+                      style={{
+                        background: "rgba(var(--white-rgb), 0.08)",
+                        color: "var(--white-color)",
+                        border: "1px solid rgba(var(--white-rgb), 0.25)",
+                        backdropFilter: "blur(8px)",
+                      }}
+                    >
+                      <Phone className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" style={{ color: "var(--accent-hex)" }} />
+                      <span className="font-black tracking-wide">{ctaPhone}</span>
+                    </motion.a>
+                  </div>
+
                 </div>
               </div>
-
-              {/* ── Right: Action Stack ── */}
-              <div className="flex flex-col gap-4 w-full lg:w-[300px] shrink-0 lg:pt-2">
-                {/* Primary CTA */}
-                <motion.a
-                  href={cta.buttonLink}
-                  whileHover={{ scale: 1.03, y: -2 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="group relative w-full flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest overflow-hidden transition-all duration-300"
-                  style={{
-                    background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))",
-                    color: "var(--dark-bg)",
-                    boxShadow: "0 16px 40px rgba(var(--primary-rgb), 0.35)",
-                  }}
-                >
-                  <span
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                    style={{ background: "linear-gradient(135deg, var(--primary-hover-hex), var(--primary-hex))" }}
-                  />
-                  <span className="relative z-10">{cta.buttonText}</span>
-                  <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-                </motion.a>
-
-                {/* Divider label */}
-                <div className="flex items-center gap-3 my-1">
-                  <div className="flex-1 h-px" style={{ background: "rgba(var(--white-rgb), 0.15)" }} />
-                  <span
-                    className="text-[10px] font-black uppercase tracking-widest"
-                    style={{ color: "var(--light-silver-color)" }}
-                  >
-                    {cta.dividerText}
-                  </span>
-                  <div className="flex-1 h-px" style={{ background: "rgba(var(--white-rgb), 0.15)" }} />
-                </div>
-
-                {/* Direct Call Button */}
-                <motion.a
-                  href={cta.phoneLink}
-                  whileHover={{ scale: 1.02, y: -1 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-300"
-                  style={{
-                    background: "rgba(var(--white-rgb), 0.06)",
-                    color: "var(--white-color)",
-                    border: "1px solid rgba(var(--white-rgb), 0.2)",
-                    backdropFilter: "blur(8px)",
-                  }}
-                >
-                  <Phone className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" style={{ color: "var(--primary-hex)" }} />
-                  <span className="font-black tracking-wide">{cta.phone}</span>
-                </motion.a>
+            </motion.div>
+          );
+        })()}
 
                 <p
                   className="text-center text-[11px] font-bold uppercase tracking-wider"

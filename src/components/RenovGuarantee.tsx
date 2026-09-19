@@ -47,7 +47,7 @@ const RenovGuarantee = () => {
             <motion.a
               href={ctaData.buttons[0].href}
               whileHover={{ x: 4 }}
-              className="group self-start inline-flex items-center gap-3 sm:gap-5 bg-primary text-dark px-6 sm:px-10 py-4 sm:py-5 font-black uppercase tracking-[0.15em] sm:tracking-[0.25em] text-[10px] sm:text-xs hover:bg-secondary hover:text-white transition-colors w-full sm:w-auto justify-center sm:justify-start"
+              className="group self-start inline-flex items-center gap-3 sm:gap-5 bg-cta text-white px-6 sm:px-10 py-4 sm:py-5 font-black uppercase tracking-[0.15em] sm:tracking-[0.25em] text-[10px] sm:text-xs hover:bg-secondary hover:text-white transition-colors w-full sm:w-auto justify-center sm:justify-start shadow-xl rounded-xl"
             >
               {ctaData.buttons[0].text}
               <ArrowRight className="w-4 h-4 flex-shrink-0 group-hover:translate-x-1 transition-transform" />

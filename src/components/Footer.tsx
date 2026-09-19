@@ -139,11 +139,11 @@ const Footer = () => {
                 <div
                   className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
                   style={{
-                    background: "rgba(var(--primary-rgb), 0.18)",
-                    border: "1px solid rgba(var(--primary-rgb), 0.35)",
+                    background: "rgba(var(--white-rgb), 0.08)",
+                    border: "1px solid rgba(var(--white-rgb), 0.2)",
                   }}
                 >
-                  <AlertTriangle className="w-5 h-5" style={{ color: "var(--primary-hex)" }} />
+                  <AlertTriangle className="w-5 h-5" style={{ color: "var(--accent-hex)" }} />
                 </div>
                 <div>
                   <div className="flex items-center justify-center md:justify-start gap-2">
@@ -154,12 +154,12 @@ const Footer = () => {
                       <span
                         className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider backdrop-blur-sm"
                         style={{
-                          background: "rgba(var(--primary-rgb), 0.15)",
-                          color: "var(--primary-hex)",
-                          border: "1px solid rgba(var(--primary-rgb), 0.3)",
+                          background: "rgba(var(--white-rgb), 0.1)",
+                          color: "var(--accent-hex)",
+                          border: "1px solid rgba(var(--white-rgb), 0.2)",
                         }}
                       >
-                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--primary-hex)" }} />
+                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--accent-hex)" }} />
                         {emergencyBar.badge}
                       </span>
                     )}
@@ -179,9 +179,10 @@ const Footer = () => {
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 shadow-xl hover:scale-105"
                   style={{
                     background:
-                      "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))",
+                      "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))",
                     color: "var(--white-color)",
-                    boxShadow: "0 8px 24px rgba(var(--primary-rgb), 0.35)",
+                    border: "1px solid rgba(174, 184, 194, 0.4)",
+                    boxShadow: "0 8px 24px rgba(18, 54, 90, 0.5)",
                   }}
                 >
                   <Phone className="w-4 h-4 text-white" />
@@ -192,7 +193,8 @@ const Footer = () => {
                   href={emergencyBar.ctaLink}
                   className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider border transition-all duration-300 hover:bg-white/10"
                   style={{
-                    borderColor: "rgba(var(--white-rgb), 0.25)",
+                    background: "rgba(var(--white-rgb), 0.08)",
+                    borderColor: "rgba(var(--white-rgb), 0.3)",
                     color: "var(--white-color)",
                   }}
                 >
@@ -246,7 +248,7 @@ const Footer = () => {
                   border: "1px solid rgba(var(--primary-rgb), 0.3)",
                 }}
               >
-                <ShieldCheck className="w-3.5 h-3.5" style={{ color: "var(--primary-hex)" }} />
+                <ShieldCheck className="w-3.5 h-3.5" style={{ color: "var(--accent-hex)" }} />
                 <span>{company.licenseBadge}</span>
               </div>
             )}
@@ -300,7 +302,7 @@ const Footer = () => {
             <div className="lg:col-span-3 space-y-4">
               <h4
                 className="text-xs font-black uppercase tracking-[0.22em] flex items-center gap-2"
-                style={{ color: "var(--primary-hex)" }}
+                style={{ color: "var(--accent-hex)" }}
               >
                 <span>{divisions.title}</span>
               </h4>
@@ -320,7 +322,7 @@ const Footer = () => {
                       >
                         <ItemIcon
                           className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
-                          style={{ color: "var(--primary-hex)" }}
+                          style={{ color: "var(--accent-hex)" }}
                         />
                         <span className="font-medium">{item.label}</span>
                       </a>
@@ -336,7 +338,7 @@ const Footer = () => {
             <div className="lg:col-span-2 space-y-4">
               <h4
                 className="text-xs font-black uppercase tracking-[0.22em]"
-                style={{ color: "var(--primary-hex)" }}
+                style={{ color: "var(--accent-hex)" }}
               >
                 {serviceAreas.title}
               </h4>
@@ -349,7 +351,7 @@ const Footer = () => {
                   >
                     <MapPin
                       className="w-3.5 h-3.5 shrink-0"
-                      style={{ color: "var(--primary-hex)" }}
+                      style={{ color: "var(--accent-hex)" }}
                     />
                     <span>{city}</span>
                   </li>
@@ -363,7 +365,7 @@ const Footer = () => {
             <div className="lg:col-span-3 space-y-4">
               <h4
                 className="text-xs font-black uppercase tracking-[0.22em]"
-                style={{ color: "var(--primary-hex)" }}
+                style={{ color: "var(--accent-hex)" }}
               >
                 {contact.title}
               </h4>
@@ -380,12 +382,12 @@ const Footer = () => {
                 >
                   <div
                     className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                    style={{ background: "rgba(var(--primary-rgb), 0.15)" }}
+                    style={{ background: "rgba(var(--white-rgb), 0.08)" }}
                   >
-                    <Phone className="w-4 h-4" style={{ color: "var(--primary-hex)" }} />
+                    <Phone className="w-4 h-4" style={{ color: "var(--accent-hex)" }} />
                   </div>
                   <div>
-                    <span className="font-bold block text-white text-base leading-tight group-hover:text-primary transition-colors">
+                    <span className="font-bold block text-white text-base leading-tight group-hover:text-accent transition-colors">
                       {contact.phone}
                     </span>
                     <span className="text-xs" style={{ color: "var(--light-silver-color)" }}>
@@ -405,9 +407,9 @@ const Footer = () => {
                 >
                   <div
                     className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                    style={{ background: "rgba(var(--primary-rgb), 0.15)" }}
+                    style={{ background: "rgba(var(--white-rgb), 0.08)" }}
                   >
-                    <Mail className="w-4 h-4" style={{ color: "var(--primary-hex)" }} />
+                    <Mail className="w-4 h-4" style={{ color: "var(--accent-hex)" }} />
                   </div>
                   <div className="overflow-hidden">
                     <span className="truncate block font-semibold text-white">
@@ -424,7 +426,7 @@ const Footer = () => {
                   style={{ borderColor: "rgba(var(--white-rgb), 0.08)" }}
                 >
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider mb-2 text-white">
-                    <Clock className="w-3.5 h-3.5" style={{ color: "var(--primary-hex)" }} />
+                    <Clock className="w-3.5 h-3.5" style={{ color: "var(--accent-hex)" }} />
                     <span>{contact.hoursTitle}</span>
                   </div>
                   <div
@@ -440,9 +442,9 @@ const Footer = () => {
                         {slot.isHighlight ? (
                           <span
                             className="font-black flex items-center gap-1.5"
-                            style={{ color: "var(--primary-hex)" }}
+                            style={{ color: "var(--accent-hex)" }}
                           >
-                            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--primary-hex)" }} />
+                            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--accent-hex)" }} />
                             {slot.hours}
                           </span>
                         ) : (
@@ -475,7 +477,7 @@ const Footer = () => {
                     borderColor: "rgba(var(--white-rgb), 0.07)",
                   }}
                 >
-                  <ItemIcon className="w-5 h-5 mb-2" style={{ color: "var(--primary-hex)" }} />
+                  <ItemIcon className="w-5 h-5 mb-2" style={{ color: "var(--accent-hex)" }} />
                   <span className="text-sm font-bold text-white block">{item.title}</span>
                   <span
                     className="text-[11px] mt-0.5"

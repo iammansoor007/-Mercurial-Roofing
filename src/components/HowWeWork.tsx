@@ -41,7 +41,7 @@ const TrustBadge = ({ label }: { label: string }) => {
       <div
         className="w-1.5 h-1.5 rounded-full"
         style={{
-          background: "var(--primary-hex)",
+          background: "var(--accent-hex)",
         }}
       />
       <span
@@ -217,16 +217,19 @@ const StatCounter = ({
   delay?: number;
 }) => {
   const ref = useRef(null);
-  const numericValue = parseInt(value);
-  const isNumeric = !isNaN(numericValue);
+  const isPureNumber = /^\d+$/.test(value.trim());
+  const numericValue = isPureNumber ? parseInt(value.trim(), 10) : 0;
   const [displayValue, setDisplayValue] = useState<number | string>(
-    isNumeric ? 0 : value,
+    isPureNumber ? 0 : value,
   );
   const [isHovered, setIsHovered] = useState(false);
   const inView = useInView(ref, { once: true, margin: "0px" });
 
   useEffect(() => {
-    if (!inView || !isNumeric) return;
+    if (!inView || !isPureNumber) {
+      if (!isPureNumber) setDisplayValue(value);
+      return;
+    }
 
     let startTime: number;
     const duration = 1200;
@@ -244,7 +247,9 @@ const StatCounter = ({
     };
 
     requestAnimationFrame(animate);
-  }, [inView, numericValue, isNumeric]);
+  }, [inView, numericValue, isPureNumber, value]);
+
+  const totalLength = (String(displayValue) + suffix).length;
 
   return (
     <motion.div
@@ -258,18 +263,21 @@ const StatCounter = ({
     >
       <div className="relative inline-block max-w-full">
         <motion.div
-          className={`${value.length > 8
-            ? "text-xl sm:text-2xl md:text-3xl"
-            : "text-4xl md:text-5xl"
-            } font-black relative z-10 whitespace-nowrap`}
+          className={`${
+            totalLength > 10
+              ? "text-lg sm:text-xl md:text-2xl"
+              : totalLength > 6
+              ? "text-2xl sm:text-3xl md:text-4xl"
+              : "text-3xl sm:text-4xl md:text-5xl"
+          } font-black relative z-10 leading-tight break-words`}
           style={{ color: "var(--primary-hex)" }}
           animate={{
-            scale: isHovered ? 1.05 : 1,
+            scale: isHovered ? 1.04 : 1,
             y: isHovered ? -2 : 0,
           }}
         >
           <span>{displayValue}</span>
-          {suffix}
+          {suffix && <span className="ml-0.5">{suffix}</span>}
         </motion.div>
 
         <motion.div
@@ -283,7 +291,7 @@ const StatCounter = ({
         />
       </div>
       <div
-        className="text-xs font-bold tracking-wider mt-2 uppercase"
+        className="text-xs font-bold tracking-wider mt-2 uppercase break-words"
         style={{ color: "var(--silver-color)" }}
       >
         {label}
@@ -455,19 +463,19 @@ const HowWeWork = () => {
                         href={button.href}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
-                        className="px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg flex items-center gap-2"
+                        className="px-8 py-3.5 rounded-full font-black transition-all duration-300 shadow-xl flex items-center gap-2"
                         style={{
                           background: button.primary
-                            ? "var(--primary-hex)"
-                            : "transparent",
+                            ? "var(--white-color)"
+                            : "rgba(var(--white-rgb), 0.1)",
                           color: button.primary
-                            ? "var(--dark-bg)"
+                            ? "var(--heading-color)"
                             : "var(--white-color)",
                           border: button.primary
                             ? "none"
-                            : "2px solid rgba(var(--white-rgb), 0.2)",
+                            : "1px solid rgba(var(--white-rgb), 0.3)",
                           boxShadow: button.primary
-                            ? "0 10px 40px rgba(var(--primary-rgb), 0.3)"
+                            ? "0 10px 30px rgba(0, 0, 0, 0.35)"
                             : "none",
                         }}
                       >
@@ -578,17 +586,20 @@ const HowWeWork = () => {
                       href={button.href}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.98 }}
-                      className="px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-lg flex items-center justify-center gap-2"
+                      className="px-6 py-3 rounded-full font-black transition-all duration-300 shadow-xl flex items-center justify-center gap-2"
                       style={{
                         background: button.primary
-                          ? "var(--primary-hex)"
-                          : "transparent",
+                          ? "var(--white-color)"
+                          : "rgba(var(--white-rgb), 0.1)",
                         color: button.primary
-                          ? "var(--dark-bg)"
+                          ? "var(--heading-color)"
                           : "var(--white-color)",
                         border: button.primary
                           ? "none"
-                          : "2px solid rgba(var(--white-rgb), 0.2)",
+                          : "1px solid rgba(var(--white-rgb), 0.3)",
+                        boxShadow: button.primary
+                          ? "0 10px 30px rgba(0, 0, 0, 0.35)"
+                          : "none",
                       }}
                     >
                       {button.text}

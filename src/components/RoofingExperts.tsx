@@ -9,29 +9,35 @@ const Counter = memo(
     suffix = "",
     duration = 1.8,
   }: {
-    value: number;
+    value: number | string;
     suffix?: string;
     duration?: number;
   }) => {
     const ref = useRef(null);
-    const [display, setDisplay] = useState(0);
+    const isNumeric = typeof value === "number" || (!isNaN(Number(value)) && typeof value !== "boolean");
+    const numValue = isNumeric ? Number(value) : 0;
+    const [display, setDisplay] = useState<number | string>(isNumeric ? 0 : value);
     const inView = useInView(ref, { once: true, margin: "0px" });
     const shouldReduceMotion = useReducedMotion();
     const hasAnimatedRef = useRef(false);
     const animationFrameRef = useRef<number>();
 
     useEffect(() => {
+      if (!isNumeric) {
+        setDisplay(value);
+        return;
+      }
       if (!inView || hasAnimatedRef.current) return;
       hasAnimatedRef.current = true;
 
       if (shouldReduceMotion) {
-        setDisplay(value);
+        setDisplay(numValue);
         return;
       }
 
       let startTime: number;
       const startValue = 0;
-      const endValue = value;
+      const endValue = numValue;
       const durationMs = duration * 1000;
 
       const animate = (timestamp: number) => {
@@ -57,11 +63,11 @@ const Counter = memo(
           cancelAnimationFrame(animationFrameRef.current);
         }
       };
-    }, [inView, value, duration, shouldReduceMotion]);
+    }, [inView, value, numValue, isNumeric, duration, shouldReduceMotion]);
 
     return (
       <span ref={ref} className="tabular-nums">
-        {display.toLocaleString()}
+        {typeof display === "number" ? display.toLocaleString() : display}
         {suffix}
       </span>
     );
@@ -93,7 +99,7 @@ const StatCard = memo(
     suffix,
     label,
   }: {
-    value: number;
+    value: number | string;
     suffix: string;
     label: string;
   }) => {
@@ -101,16 +107,16 @@ const StatCard = memo(
       <motion.div
         whileHover={{ y: -4 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="relative p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-lg transition-all duration-300 w-full transform-gpu"
+        className="relative p-3.5 sm:p-5 rounded-xl sm:rounded-2xl shadow-lg transition-all duration-300 w-full transform-gpu flex flex-col justify-between min-h-[110px]"
         style={{ background: "var(--card-bg)", border: "1px solid var(--graphite-color)" }}
       >
         <div className="relative">
-          <span className="text-2xl sm:text-3xl md:text-4xl font-black" style={{ color: "var(--primary-hex)" }}>
+          <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black leading-none block" style={{ color: "var(--primary-hex)" }}>
             <Counter value={value} suffix={suffix} />
           </span>
-          <div className="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 rounded-full" style={{ background: "linear-gradient(90deg, var(--primary-hex), var(--primary-hover-hex))" }} />
+          <div className="mt-2 w-8 sm:w-12 h-0.5 rounded-full" style={{ background: "linear-gradient(90deg, var(--primary-hex), var(--secondary-hex))" }} />
         </div>
-        <p className="text-[10px] sm:text-xs font-bold mt-3 leading-tight uppercase tracking-wide" style={{ color: "var(--silver-color)" }}>
+        <p className="text-[11px] sm:text-xs font-bold mt-3 leading-snug uppercase tracking-wider break-words" style={{ color: "var(--silver-color)" }}>
           {label}
         </p>
       </motion.div>
@@ -289,8 +295,8 @@ export default function AboutSection() {
                       href={button.href}
                       whileHover={{ scale: 1.03, y: -2 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-semibold sm:font-bold text-sm sm:text-base transition-all duration-300"
-                      style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "var(--dark-bg)", boxShadow: "0 8px 32px rgba(var(--primary-rgb), 0.35)" }}
+                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300 shadow-xl"
+                      style={{ background: "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))", color: "#FFFFFF", boxShadow: "0 8px 32px rgba(18, 54, 90, 0.4)" }}
                     >
                       <span
                         className="
@@ -324,8 +330,8 @@ export default function AboutSection() {
                       href={button.href}
                       whileHover={{ scale: 1.03, y: -2 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-semibold sm:font-bold text-sm sm:text-base transition-all duration-300"
-                      style={{ background: "transparent", color: "var(--silver-color)", border: "2px solid rgba(var(--primary-rgb), 0.35)" }}
+                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300"
+                      style={{ background: "transparent", color: "var(--heading-color)", border: "2px solid var(--secondary-hex)" }}
                     >
                       <span
                         className="
@@ -361,7 +367,7 @@ export default function AboutSection() {
             <motion.div
               variants={variants}
               custom={7}
-              className="grid grid-cols-3 gap-4 pt-8"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-8"
             >
               {stats.map((stat: any) => (
                 <StatCard key={stat.label} {...stat} />

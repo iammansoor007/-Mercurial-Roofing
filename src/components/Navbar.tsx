@@ -396,7 +396,12 @@ const Navbar = () => {
                 href={ctaButton.href}
                 onClick={handleLinkClick}
                 onMouseEnter={() => setActiveMegaMenu(null)}
-                className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-primary text-primary-foreground hover:bg-primary hover:text-white "
+                className="group relative px-7 py-3.5 rounded-xl font-bold transition-all duration-300 shadow-lg hover:scale-105"
+                style={{
+                  background: "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))",
+                  color: "#FFFFFF",
+                  border: "1px solid rgba(174, 184, 194, 0.35)",
+                }}
               >
                 <span className="relative z-10 flex items-center space-x-2 text-white">
                   {(() => {
@@ -574,7 +579,12 @@ const Navbar = () => {
                     <a
                       href={ctaButton.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className="block w-full py-4 bg-gradient-to-r from-primary to-secondary text-dark font-bold rounded-xl text-center shadow-lg shadow-primary/20 transition-all duration-300 active:scale-[0.98]"
+                      className="block w-full py-4 font-black rounded-xl text-center shadow-xl transition-all duration-300 active:scale-[0.98]"
+                      style={{
+                        background: "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))",
+                        color: "#FFFFFF",
+                        border: "1px solid rgba(174, 184, 194, 0.35)",
+                      }}
                     >
                       {(completeData.navbar as any).mobileCtaText || ctaButton.label}
                     </a>
