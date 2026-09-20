@@ -30,19 +30,19 @@ import logo2nd from "../assets/logo.webp";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
-  Home: ({ className = "text-foreground" }: { className?: string } = {}) => <Home className={`h-5 w-5 ${className}`} />,
-  Briefcase: ({ className = "text-foreground" }: { className?: string } = {}) => <Briefcase className={`h-5 w-5 ${className}`} />,
-  Users: ({ className = "text-foreground" }: { className?: string } = {}) => <Users className={`h-5 w-5 ${className}`} />,
-  MessageSquare: ({ className = "text-foreground" }: { className?: string } = {}) => <MessageSquare className={`h-5 w-5 ${className}`} />,
-  Phone: ({ className = "text-foreground" }: { className?: string } = {}) => <Phone className={`h-5 w-5 ${className}`} />,
-  ClipboardCheck: ({ className = "text-foreground" }: { className?: string } = {}) => <ClipboardCheck className={`h-5 w-5 ${className}`} />,
-  Star: ({ className = "text-foreground" }: { className?: string } = {}) => <Star className={`h-5 w-5 ${className}`} />,
-  Clock: ({ className = "text-foreground" }: { className?: string } = {}) => <Clock className={`h-5 w-5 ${className}`} />,
-  Shield: ({ className = "text-foreground" }: { className?: string } = {}) => <Shield className={`h-5 w-5 ${className}`} />,
-  Image: ({ className = "text-foreground" }: { className?: string } = {}) => <Briefcase className={`h-5 w-5 ${className}`} />,
-  FileText: ({ className = "text-foreground" }: { className?: string } = {}) => <FileText className={`h-5 w-5 ${className}`} />,
-  Calendar: ({ className = "text-foreground" }: { className?: string } = {}) => <Calendar className={`h-5 w-5 ${className}`} />,
-  Wrench: ({ className = "text-foreground" }: { className?: string } = {}) => <Wrench className={`h-5 w-5 ${className}`} />,
+  Home: ({ className = "text-current" }: { className?: string } = {}) => <Home className={`h-4 w-4 ${className}`} />,
+  Briefcase: ({ className = "text-current" }: { className?: string } = {}) => <Briefcase className={`h-4 w-4 ${className}`} />,
+  Users: ({ className = "text-current" }: { className?: string } = {}) => <Users className={`h-4 w-4 ${className}`} />,
+  MessageSquare: ({ className = "text-current" }: { className?: string } = {}) => <MessageSquare className={`h-4 w-4 ${className}`} />,
+  Phone: ({ className = "text-current" }: { className?: string } = {}) => <Phone className={`h-4 w-4 ${className}`} />,
+  ClipboardCheck: ({ className = "text-current" }: { className?: string } = {}) => <ClipboardCheck className={`h-4 w-4 ${className}`} />,
+  Star: ({ className = "text-current" }: { className?: string } = {}) => <Star className={`h-4 w-4 ${className}`} />,
+  Clock: ({ className = "text-current" }: { className?: string } = {}) => <Clock className={`h-4 w-4 ${className}`} />,
+  Shield: ({ className = "text-current" }: { className?: string } = {}) => <Shield className={`h-4 w-4 ${className}`} />,
+  Image: ({ className = "text-current" }: { className?: string } = {}) => <Briefcase className={`h-4 w-4 ${className}`} />,
+  FileText: ({ className = "text-current" }: { className?: string } = {}) => <FileText className={`h-4 w-4 ${className}`} />,
+  Calendar: ({ className = "text-current" }: { className?: string } = {}) => <Calendar className={`h-4 w-4 ${className}`} />,
+  Wrench: ({ className = "text-current" }: { className?: string } = {}) => <Wrench className={`h-4 w-4 ${className}`} />,
 };
 const serviceIconMap = {
   Home: ({ isHovered = false }: { isHovered?: boolean }) => (
@@ -221,44 +221,49 @@ const Navbar = () => {
               />
             </motion.a>
 
-            <div className="hidden lg:flex items-center space-x-2">
+            <div className="hidden lg:flex items-center space-x-1">
               {companyLinks.map((link) => {
                 const LinkIcon = iconMap[link.icon as keyof typeof iconMap] || iconMap.Home;
                 const isServices = link.label.toLowerCase() === "services";
+                const isServicesActive = isServices && activeMegaMenu === "services";
 
                 if (isServices) {
                   return (
                     <div key={link.label} className="relative">
-                      <motion.button
+                      <button
                         ref={servicesButtonRef}
                         onMouseEnter={handleServicesMouseEnter}
                         onMouseLeave={handleServicesMouseLeave}
-                        className={`flex items-center space-x-2 px-5 py-2.5 ${scrolled ? "text-foreground" : "text-white"} hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group`}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-sm cursor-pointer ${
+                          scrolled
+                            ? isServicesActive
+                              ? "bg-primary/10 text-primary shadow-sm transition-all duration-200"
+                              : "text-foreground hover:text-primary hover:bg-primary/[0.08] transition-all duration-200"
+                            : isServicesActive
+                            ? "text-white bg-white/10"
+                            : "text-white"
+                        }`}
                       >
-                        <span className="flex items-center space-x-2">
-                          <LinkIcon className={`${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`} />
-                          <span className={`${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`}>
-                            {link.label}
-                          </span>
-                        </span>
-                        <motion.span
-                          animate={{
-                            rotate: activeMegaMenu === "services" ? 180 : 0,
-                          }}
-                          transition={{ duration: 0.3 }}
-                        >
-                          <ChevronDown className={`h-4 w-4 ml-1 ${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`} />
-                        </motion.span>
-                        <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-4/5 transition-all duration-500" />
-                      </motion.button>
+                        <LinkIcon className={`h-4 w-4 ${
+                          scrolled
+                            ? isServicesActive ? "text-primary" : "text-muted-foreground"
+                            : "text-white"
+                        }`} />
+                        <span className={scrolled ? "" : "text-white font-semibold"}>{link.label}</span>
+                        <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                          isServicesActive ? "rotate-180" : ""
+                        } ${
+                          scrolled
+                            ? isServicesActive ? "text-primary" : "text-muted-foreground"
+                            : "text-white"
+                        }`} />
+                      </button>
                     </div>
                   );
                 }
 
                 return (
-                  <motion.a
+                  <a
                     key={link.label}
                     href={link.href}
                     onClick={(e) => {
@@ -269,18 +274,17 @@ const Navbar = () => {
                       handleLinkClick();
                     }}
                     onMouseEnter={() => setActiveMegaMenu(null)}
-                    className={`flex items-center space-x-2 px-4 py-2.5 ${scrolled ? "text-foreground" : "text-white"} hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group`}
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
+                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-sm cursor-pointer ${
+                      scrolled
+                        ? "text-foreground hover:text-primary hover:bg-primary/[0.08] transition-all duration-200"
+                        : "text-white"
+                    }`}
                   >
-                    <div className={`${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`}>
-                      <LinkIcon className={`${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`} />
-                    </div>
-                    <span className={`${scrolled ? "text-foreground" : "text-white"} group-hover:text-primary transition-colors`}>
-                      {link.label}
-                    </span>
-                    <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-500" />
-                  </motion.a>
+                    <LinkIcon className={`h-4 w-4 ${
+                      scrolled ? "text-muted-foreground" : "text-white"
+                    }`} />
+                    <span className={scrolled ? "" : "text-white font-semibold"}>{link.label}</span>
+                  </a>
                 );
               })}
             </div>
@@ -333,7 +337,7 @@ const Navbar = () => {
                       key="menu"
                       initial={{ rotate: 90, opacity: 0 }}
                       animate={{ rotate: 0, opacity: 1 }}
-                      exit={{ rotate: -90, opacity: 0 }}
+                      exit={{ rotate: 90, opacity: 0 }}
                     >
                       <Menu className="h-6 w-6 text-foreground" />
                     </motion.div>
@@ -350,17 +354,17 @@ const Navbar = () => {
             {activeMegaMenu === "services" && (
               <motion.div
                 ref={megaMenuRef}
-                initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                initial={{ opacity: 0, y: 8, scale: 0.99 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 8, scale: 0.98 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
+                exit={{ opacity: 0, y: 8, scale: 0.99 }}
+                transition={{ duration: 0.18, ease: "easeOut" }}
                 onMouseEnter={handleMegaMenuMouseEnter}
                 onMouseLeave={handleMegaMenuMouseLeave}
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-2.5 w-[94vw] max-w-[860px] rounded-2xl border p-5 sm:p-6 overflow-hidden shadow-2xl backdrop-blur-2xl before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3"
+                className="absolute left-0 right-0 mx-auto top-full mt-2.5 w-[94vw] max-w-[860px] rounded-2xl border p-5 sm:p-6 overflow-hidden shadow-2xl backdrop-blur-2xl before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3"
                 style={{
                   background: "var(--card-bg)",
                   borderColor: "var(--border-color)",
-                  boxShadow: "0 25px 50px -12px rgba(var(--black-rgb), 0.18), 0 0 0 1px rgba(var(--border-rgb), 0.7)",
+                  boxShadow: "0 25px 50px -12px rgba(var(--black-rgb), 0.2), 0 0 0 1px rgba(var(--border-rgb), 0.7)",
                   zIndex: 1000,
                 }}
               >
