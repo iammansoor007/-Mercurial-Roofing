@@ -6,14 +6,16 @@ import {
   Layout, Building, CheckCircle, Phone, Zap,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import imgRoofing from "@/assets/p1.webp";
-import imgConstruction from "@/assets/p2.webp";
-import imgRestoration from "@/assets/mercurial_roofing_upscaled_2x.jpg";
+import imgReplacement from "@/assets/service-replacement.webp";
+import imgLeakDetection from "@/assets/service-leak.webp";
+import imgStormClaims from "@/assets/service-storm.webp";
+import imgGutters from "@/assets/service-gutters.webp";
 
 const serviceImageMap: Record<string, string> = {
-  "01": imgRoofing,
-  "02": imgConstruction,
-  "03": imgRestoration,
+  "01": imgReplacement,
+  "02": imgLeakDetection,
+  "03": imgStormClaims,
+  "04": imgGutters,
 };
 
 const iconMap: Record<string, React.ElementType> = {
