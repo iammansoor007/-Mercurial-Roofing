@@ -22,7 +22,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import logo from "../assets/newlogo.png";
+import logo from "../assets/logo.webp";
 import completeData from "../src/data/completeData.json";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -74,7 +74,7 @@ const Footer = () => {
         className="h-1.5 w-full"
         style={{
           background:
-            "linear-gradient(90deg, transparent 0%, var(--primary-hex) 35%, var(--primary-hover-hex) 65%, transparent 100%)",
+            "linear-gradient(90deg, transparent 0%, var(--secondary-hex) 35%, var(--accent-hex) 65%, transparent 100%)",
         }}
       />
 
@@ -115,7 +115,7 @@ const Footer = () => {
                   </span>
                   <span
                     className="w-1.5 h-1.5 rounded-full shrink-0"
-                    style={{ background: "var(--primary-hex)" }}
+                    style={{ background: "var(--accent-hex)" }}
                   />
                 </div>
               )
@@ -176,7 +176,7 @@ const Footer = () => {
               <div className="flex items-center gap-3 shrink-0">
                 <a
                   href={emergencyBar.phoneLink}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 shadow-xl hover:scale-105"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 shadow-xl hover:scale-105 whitespace-nowrap"
                   style={{
                     background:
                       "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))",
@@ -185,21 +185,21 @@ const Footer = () => {
                     boxShadow: "0 8px 24px rgba(18, 54, 90, 0.5)",
                   }}
                 >
-                  <Phone className="w-4 h-4 text-white" />
-                  <span>{emergencyBar.phone}</span>
+                  <Phone className="w-4 h-4 text-white shrink-0" />
+                  <span className="whitespace-nowrap">{emergencyBar.phone}</span>
                 </a>
 
                 <a
                   href={emergencyBar.ctaLink}
-                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider border transition-all duration-300 hover:bg-white/10"
+                  className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider border transition-all duration-300 hover:bg-white/10 whitespace-nowrap"
                   style={{
                     background: "rgba(var(--white-rgb), 0.08)",
                     borderColor: "rgba(var(--white-rgb), 0.3)",
                     color: "var(--white-color)",
                   }}
                 >
-                  <span>{emergencyBar.ctaText}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <span className="whitespace-nowrap">{emergencyBar.ctaText}</span>
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </a>
               </div>
             </div>
@@ -231,7 +231,7 @@ const Footer = () => {
                   </h3>
                   <span
                     className="text-[10px] font-black tracking-[0.25em] uppercase block mt-1"
-                    style={{ color: "var(--primary-hex)" }}
+                    style={{ color: "var(--accent-hex)" }}
                   >
                     {company.subTitle}
                   </span>
@@ -503,7 +503,7 @@ const Footer = () => {
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
               <span>{bottom.copyright}</span>
               <span className="hidden sm:inline">•</span>
-              <span style={{ color: "var(--primary-hex)", fontWeight: 700 }}>
+              <span style={{ color: "var(--light-silver-color)", fontWeight: 700 }}>
                 {bottom.tagline}
               </span>
             </div>
@@ -534,7 +534,7 @@ const Footer = () => {
                 <span className="text-[11px] font-bold uppercase tracking-wider">
                   {bottom.backToTop}
                 </span>
-                <ChevronUp className="w-3.5 h-3.5" style={{ color: "var(--primary-hex)" }} />
+                <ChevronUp className="w-3.5 h-3.5" style={{ color: "var(--accent-hex)" }} />
               </button>
             </div>
           </div>

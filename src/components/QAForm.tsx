@@ -1164,13 +1164,13 @@ Fully Insured • Multi-State Coverage
                     <motion.button
                       type="button"
                       onClick={() => setFormStep(formStep + 1)}
-                      className="relative px-5 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-primary to-primary/80 text-white text-xs sm:text-sm font-medium rounded-full shadow-lg overflow-hidden group cursor-pointer"
+                      className="relative px-5 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-primary to-primary/80 text-white text-xs sm:text-sm font-medium rounded-full shadow-lg overflow-hidden group cursor-pointer whitespace-nowrap"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <span className="relative z-10 flex items-center gap-1 sm:gap-2">
-                        {buttons.continue}
-                        <Icons.ArrowRight />
+                      <span className="relative z-10 flex items-center gap-1 sm:gap-2 whitespace-nowrap">
+                        <span className="whitespace-nowrap">{buttons.continue}</span>
+                        <Icons.ArrowRight className="shrink-0" />
                       </span>
                       <motion.div
                         className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary"
@@ -1183,11 +1183,11 @@ Fully Insured • Multi-State Coverage
                     <motion.button
                       type="submit"
                       disabled={isSubmitting}
-                      className="relative px-6 sm:px-10 py-2.5 sm:py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground text-xs sm:text-sm font-medium rounded-full shadow-2xl overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                      className="relative px-6 sm:px-10 py-2.5 sm:py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground text-xs sm:text-sm font-medium rounded-full shadow-2xl overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer whitespace-nowrap"
                       whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                       whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                     >
-                      <span className="relative z-10 flex items-center gap-1 sm:gap-2">
+                      <span className="relative z-10 flex items-center gap-1 sm:gap-2 whitespace-nowrap">
                         {isSubmitting ? (
                           <>
                             <motion.div
@@ -1197,19 +1197,19 @@ Fully Insured • Multi-State Coverage
                                 repeat: Infinity,
                                 ease: "linear",
                               }}
-                              className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full"
+                              className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full shrink-0"
                             />
-                            <span className="hidden xs:inline">
+                            <span className="hidden xs:inline whitespace-nowrap">
                               {buttons?.submitting}
                             </span>
                           </>
                         ) : (
                           <>
-                            <span className="hidden xs:inline">
+                            <span className="hidden xs:inline whitespace-nowrap">
                               {buttons?.submitIdle}
                             </span>
-                            <span className="xs:hidden">{buttons?.submitMobile}</span>
-                            <Icons.Send />
+                            <span className="xs:hidden whitespace-nowrap">{buttons?.submitMobile}</span>
+                            <Icons.Send className="shrink-0" />
                           </>
                         )}
                       </span>

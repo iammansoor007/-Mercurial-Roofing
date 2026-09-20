@@ -115,8 +115,6 @@
 
   * {
     @apply border-border;
-    /* Use logical pixels — improves text rendering on HiDPI */
-    text-rendering: optimizeSpeed;
     box-sizing: border-box;
   }
 
@@ -129,8 +127,6 @@
     color: var(--body-text-color);
     /* Prevent layout shift when scrollbar appears */
     overflow-x: hidden;
-    /* Smooth momentum scrolling */
-    overscroll-behavior-y: none;
   }
 
   #root {

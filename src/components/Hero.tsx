@@ -15,7 +15,7 @@ import {
   MapPin,
   Droplets,
 } from "lucide-react";
-import roofingBg from "@/assets/p2.png";
+import roofingBg from "@/assets/newhero.webp";
 import completeData from "../src/data/completeData.json";
 
 const heroIconMap: Record<string, React.ElementType> = {
@@ -80,6 +80,7 @@ const Hero = () => {
           className="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000"
           style={{ opacity: 0.60 }}
           loading="eager"
+          fetchPriority="high"
           decoding="async"
         />
 
@@ -194,7 +195,7 @@ const Hero = () => {
                   href={emergencyButton.href}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="relative group px-8 py-4 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-3 shadow-2xl transition-all duration-300"
+                  className="relative group px-8 py-4 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-3 shadow-2xl transition-all duration-300 whitespace-nowrap"
                   style={{
                     background:
                       "linear-gradient(135deg, var(--cta-hex) 0%, var(--secondary-hex) 100%)",
@@ -203,9 +204,9 @@ const Hero = () => {
                     boxShadow: "0 10px 30px rgba(18, 54, 90, 0.6)",
                   }}
                 >
-                  <div className="w-2.5 h-2.5 rounded-full animate-ping" style={{ background: "var(--white-color)" }} />
-                  <Phone className="w-5 h-5" style={{ color: "var(--white-color)" }} />
-                  <span>{emergencyButton.text}</span>
+                  <div className="w-2.5 h-2.5 rounded-full animate-ping shrink-0" style={{ background: "var(--white-color)" }} />
+                  <Phone className="w-5 h-5 shrink-0" style={{ color: "var(--white-color)" }} />
+                  <span className="whitespace-nowrap">{emergencyButton.text}</span>
                 </motion.a>
               )}
 
@@ -215,15 +216,15 @@ const Hero = () => {
                   href={requestButton.href}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 border transition-all duration-300"
+                  className="px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 border transition-all duration-300 whitespace-nowrap"
                   style={{
                     background: "rgba(var(--white-rgb), 0.12)",
                     borderColor: "rgba(var(--white-rgb), 0.35)",
                     color: "var(--white-color)",
                   }}
                 >
-                  <span>{requestButton.text}</span>
-                  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
+                  <span className="whitespace-nowrap">{requestButton.text}</span>
+                  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform shrink-0" />
                 </motion.a>
               )}
             </motion.div>
@@ -467,7 +468,7 @@ const Hero = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 rounded-xl font-black text-sm uppercase tracking-wider transition-all duration-300 shadow-xl flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02]"
+                      className="w-full py-4 rounded-xl font-black text-sm uppercase tracking-wider transition-all duration-300 shadow-xl flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] whitespace-nowrap"
                       style={{
                         background:
                           "linear-gradient(135deg, var(--cta-hex) 0%, var(--secondary-hex) 100%)",

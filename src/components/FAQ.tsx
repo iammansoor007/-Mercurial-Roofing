@@ -7,7 +7,7 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import completeData from "../src/data/completeData.json";
-import vectorimage from '../assets/pvector.png'
+import vectorimage from '../assets/vector.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -567,15 +567,15 @@ const KnowledgeCard = () => {
                     whileTap={{ scale: 0.98 }}
                     className={`
                       px-8 py-3.5 rounded-full font-black transition-all duration-300 shadow-xl
-                      flex items-center gap-2
+                      flex items-center gap-2 whitespace-nowrap
                       ${button.primary
                         ? 'bg-white text-heading hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
                         : 'bg-white/10 text-white border border-white/30 hover:bg-white/20 backdrop-blur-sm'
                       }
                     `}
                   >
-                    {button.text}
-                    <Icons.ArrowRight />
+                    <span className="whitespace-nowrap">{button.text}</span>
+                    <Icons.ArrowRight className="shrink-0" />
                   </motion.a>
                 ))}
               </motion.div>
@@ -664,20 +664,20 @@ const KnowledgeCard = () => {
                   whileTap={{ scale: 0.98 }}
                   className={`
                     px-6 py-3 rounded-full font-black transition-all duration-300 shadow-xl
-                    flex items-center justify-center gap-2
+                    flex items-center justify-center gap-2 whitespace-nowrap
                     ${button.primary
                       ? 'bg-white text-heading hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
                       : 'bg-white/10 text-white border border-white/30 hover:bg-white/20'
                     }
                   `}
                 >
-                  {button.text}
-                  <Icons.ArrowRight />
+                  <span className="whitespace-nowrap">{button.text}</span>
+                  <Icons.ArrowRight className="shrink-0" />
                 </motion.a>
               ))}
             </motion.div>
 
-            {/* Trust Badges - Mobile */}
+
             <div className="mt-6 flex flex-wrap justify-center gap-2">
               {(knowledgeCard.trustBadges || []).map((b: any) => (
                 <TrustBadge key={b.label} label={b.label} color={b.color} />

@@ -12,7 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import vectorimage2 from "@/assets/pvector.png";
+import vectorimage2 from "@/assets/vector.webp";
 
 const iconMap: Record<string, React.ElementType> = {
   Award,
@@ -45,7 +45,7 @@ const TrustBadge = ({ label }: { label: string }) => {
         }}
       />
       <span
-        className="text-[10px] font-bold uppercase tracking-wider"
+        className="text-[10px] font-bold uppercase tracking-wider whitespace-nowrap"
         style={{ color: "var(--white-color)" }}
       >
         {label}
@@ -263,13 +263,12 @@ const StatCounter = ({
     >
       <div className="relative inline-block max-w-full">
         <motion.div
-          className={`${
-            totalLength > 10
-              ? "text-lg sm:text-xl md:text-2xl"
-              : totalLength > 6
+          className={`${totalLength > 10
+            ? "text-lg sm:text-xl md:text-2xl"
+            : totalLength > 6
               ? "text-2xl sm:text-3xl md:text-4xl"
               : "text-3xl sm:text-4xl md:text-5xl"
-          } font-black relative z-10 leading-tight break-words`}
+            } font-black relative z-10 leading-tight whitespace-nowrap`}
           style={{ color: "var(--primary-hex)" }}
           animate={{
             scale: isHovered ? 1.04 : 1,
@@ -291,7 +290,7 @@ const StatCounter = ({
         />
       </div>
       <div
-        className="text-xs font-bold tracking-wider mt-2 uppercase break-words"
+        className="text-xs font-bold tracking-wider mt-2 uppercase whitespace-nowrap"
         style={{ color: "var(--silver-color)" }}
       >
         {label}
@@ -431,7 +430,7 @@ const HowWeWork = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight uppercase"
+                    className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight uppercase [&_.text-primary]:text-[var(--accent-hex)]"
                     style={{
                       fontFamily: "var(--font-heading)",
                       color: "var(--white-color)",
@@ -463,7 +462,7 @@ const HowWeWork = () => {
                         href={button.href}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
-                        className="px-8 py-3.5 rounded-full font-black transition-all duration-300 shadow-xl flex items-center gap-2"
+                        className="px-8 py-3.5 rounded-full font-black transition-all duration-300 shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
                         style={{
                           background: button.primary
                             ? "var(--white-color)"
@@ -479,8 +478,8 @@ const HowWeWork = () => {
                             : "none",
                         }}
                       >
-                        {button.text}
-                        <ArrowRight className="w-4 h-4" />
+                        <span className="whitespace-nowrap">{button.text}</span>
+                        <ArrowRight className="w-4 h-4 shrink-0" />
                       </motion.a>
                     ))}
                   </motion.div>
@@ -554,7 +553,7 @@ const HowWeWork = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  className="text-3xl sm:text-4xl font-bold leading-[1.2] uppercase tracking-tight"
+                  className="text-3xl sm:text-4xl font-bold leading-[1.2] uppercase tracking-tight [&_.text-primary]:text-[var(--accent-hex)]"
                   style={{
                     fontFamily: "var(--font-heading)",
                     color: "var(--white-color)",
@@ -586,7 +585,7 @@ const HowWeWork = () => {
                       href={button.href}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.98 }}
-                      className="px-6 py-3 rounded-full font-black transition-all duration-300 shadow-xl flex items-center justify-center gap-2"
+                      className="px-6 py-3 rounded-full font-black transition-all duration-300 shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
                       style={{
                         background: button.primary
                           ? "var(--white-color)"
@@ -602,8 +601,8 @@ const HowWeWork = () => {
                           : "none",
                       }}
                     >
-                      {button.text}
-                      <ArrowRight className="w-4 h-4" />
+                      <span className="whitespace-nowrap">{button.text}</span>
+                      <ArrowRight className="w-4 h-4 shrink-0" />
                     </motion.a>
                   ))}
                 </motion.div>

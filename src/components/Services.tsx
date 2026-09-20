@@ -6,8 +6,8 @@ import {
   Layout, Building, CheckCircle, Phone, Zap,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import imgRoofing from "@/assets/p1.png";
-import imgConstruction from "@/assets/p2.png";
+import imgRoofing from "@/assets/p1.webp";
+import imgConstruction from "@/assets/p2.webp";
 import imgRestoration from "@/assets/mercurial_roofing_upscaled_2x.jpg";
 
 const serviceImageMap: Record<string, string> = {
@@ -100,7 +100,7 @@ const ServiceCard = memo(({
           </div>
         )}
         <div className="absolute top-4 left-4">
-          <span className="text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg" style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "var(--dark-bg)" }}>
+          <span className="text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap" style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "var(--dark-bg)" }}>
             {service.tag}
           </span>
         </div>
@@ -135,8 +135,8 @@ const ServiceCard = memo(({
           ))}
         </div>
 
-        <div className="mt-auto flex items-center gap-2 text-sm font-black uppercase tracking-widest transition-colors duration-300" style={{ color: "var(--primary-hex)" }}>
-          <span>{completeData.services.cardCta}</span>
+        <div className="mt-auto flex items-center gap-2 text-sm font-black uppercase tracking-wider transition-colors duration-300 whitespace-nowrap" style={{ color: "var(--primary-hex)" }}>
+          <span className="whitespace-nowrap">{completeData.services.cardCta}</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 shrink-0" />
         </div>
       </div>
@@ -314,7 +314,7 @@ const Services = () => {
                     </p>
 
                     {/* Trust ribbon */}
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-8">
                       {ctaTrustBadges.map((t: string) => (
                         <div
                           key={t}
@@ -326,7 +326,7 @@ const Services = () => {
                         >
                           <CheckCircle className="w-3.5 h-3.5 shrink-0 text-white" />
                           <span
-                            className="text-xs font-bold uppercase tracking-wider"
+                            className="text-xs font-bold uppercase tracking-wider whitespace-nowrap"
                             style={{ color: "var(--white-color)" }}
                           >
                             {t}
@@ -337,28 +337,28 @@ const Services = () => {
                   </div>
 
                   {/* ── Right: Action Stack ── */}
-                  <div className="flex flex-col gap-4 w-full lg:w-[300px] shrink-0 lg:pt-2">
+                  <div className="flex flex-col gap-4 w-full lg:w-[330px] xl:w-[350px] shrink-0 lg:pt-2">
                     {/* Primary CTA */}
                     <motion.a
                       href={cta.buttonLink}
                       whileHover={{ scale: 1.03, y: -2 }}
                       whileTap={{ scale: 0.97 }}
-                      className="group relative w-full flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest overflow-hidden transition-all duration-300 shadow-2xl"
+                      className="group relative w-full flex items-center justify-center gap-3 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl font-black text-sm uppercase tracking-wider overflow-hidden transition-all duration-300 shadow-2xl whitespace-nowrap"
                       style={{
                         background: "#FFFFFF",
                         color: "var(--primary-hex)",
                         boxShadow: "0 16px 40px rgba(0, 0, 0, 0.35)",
                       }}
                     >
-                      <span className="relative z-10 font-black">{cta.buttonText}</span>
-                      <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+                      <span className="relative z-10 font-black whitespace-nowrap">{cta.buttonText}</span>
+                      <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
                     </motion.a>
 
                     {/* Divider label */}
                     <div className="flex items-center gap-3 my-1">
                       <div className="flex-1 h-px" style={{ background: "rgba(var(--white-rgb), 0.15)" }} />
                       <span
-                        className="text-[10px] font-black uppercase tracking-widest"
+                        className="text-[10px] font-black uppercase tracking-widest whitespace-nowrap"
                         style={{ color: "var(--light-silver-color)" }}
                       >
                         {ctaDivider}
@@ -371,7 +371,7 @@ const Services = () => {
                       href={ctaPhoneLink}
                       whileHover={{ scale: 1.02, y: -1 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group w-full flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-300"
+                      className="group w-full flex items-center justify-center gap-3 px-6 sm:px-8 py-4 rounded-2xl font-bold text-sm transition-all duration-300 whitespace-nowrap"
                       style={{
                         background: "rgba(var(--white-rgb), 0.08)",
                         color: "var(--white-color)",
@@ -380,8 +380,15 @@ const Services = () => {
                       }}
                     >
                       <Phone className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:scale-110" style={{ color: "var(--accent-hex)" }} />
-                      <span className="font-black tracking-wide">{ctaPhone}</span>
+                      <span className="font-black tracking-wide whitespace-nowrap">{ctaPhone}</span>
                     </motion.a>
+
+                    <p
+                      className="text-center text-[11px] font-bold uppercase tracking-wider whitespace-nowrap"
+                      style={{ color: "var(--light-silver-color)" }}
+                    >
+                      {cta.phoneLabel}
+                    </p>
                   </div>
 
                 </div>
@@ -389,18 +396,6 @@ const Services = () => {
             </motion.div>
           );
         })()}
-
-                <p
-                  className="text-center text-[11px] font-bold uppercase tracking-wider"
-                  style={{ color: "var(--light-silver-color)" }}
-                >
-                  {cta.phoneLabel}
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Integrated Elegant Transition Fade */}

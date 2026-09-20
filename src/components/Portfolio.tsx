@@ -388,26 +388,26 @@ const Portfolio = () => {
             <div className="flex flex-col sm:flex-row items-center gap-3.5 shrink-0 w-full md:w-auto">
               <a
                 href={consultation.buttonLink}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-xl transition-all duration-300 hover:scale-105"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
                 style={{
                   background: "var(--white-color)",
                   color: "var(--heading-color)",
                 }}
               >
-                <span>{consultation.buttonText}</span>
-                <ArrowRight className="w-4 h-4" />
+                <span className="whitespace-nowrap">{consultation.buttonText}</span>
+                <ArrowRight className="w-4 h-4 shrink-0" />
               </a>
 
               <a
                 href={consultation.phoneLink}
-                className="w-full sm:w-auto px-7 py-4 rounded-xl font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2 border transition-all duration-300 hover:bg-white/10"
+                className="w-full sm:w-auto px-7 py-4 rounded-xl font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2 border transition-all duration-300 hover:bg-white/10 whitespace-nowrap"
                 style={{
                   borderColor: "rgba(var(--white-rgb), 0.25)",
                   color: "var(--white-color)",
                 }}
               >
-                <Phone className="w-4 h-4" />
-                <span>{consultation.phone}</span>
+                <Phone className="w-4 h-4 shrink-0" />
+                <span className="whitespace-nowrap">{consultation.phone}</span>
               </a>
             </div>
           </div>

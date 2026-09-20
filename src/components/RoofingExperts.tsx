@@ -1,6 +1,6 @@
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef, useEffect, useState, useCallback, useMemo, memo } from "react";
-import AboutImg from "@/assets/p3.png";
+import AboutImg from "@/assets/aboutm.webp";
 import completeData from "../src/data/completeData.json";
 
 const Counter = memo(
@@ -66,9 +66,15 @@ const Counter = memo(
     }, [inView, value, numValue, isNumeric, duration, shouldReduceMotion]);
 
     return (
-      <span ref={ref} className="tabular-nums">
-        {typeof display === "number" ? display.toLocaleString() : display}
-        {suffix}
+      <span ref={ref} className="tabular-nums inline-flex items-baseline">
+        <span className="text-2xl sm:text-3xl font-black">
+          {typeof display === "number" ? display.toLocaleString() : display}
+        </span>
+        {suffix && (
+          <span className="text-sm sm:text-base font-bold ml-1 opacity-90">
+            {suffix}
+          </span>
+        )}
       </span>
     );
   },
@@ -102,21 +108,47 @@ const StatCard = memo(
     value: number | string;
     suffix: string;
     label: string;
+    index?: number;
   }) => {
     return (
       <motion.div
         whileHover={{ y: -4 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="relative p-3.5 sm:p-5 rounded-xl sm:rounded-2xl shadow-lg transition-all duration-300 w-full transform-gpu flex flex-col justify-between min-h-[110px]"
-        style={{ background: "var(--card-bg)", border: "1px solid var(--graphite-color)" }}
+        className="relative p-4 sm:p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 w-full flex flex-col justify-between overflow-hidden"
+        style={{
+          background: "var(--card-bg)",
+          border: "1px solid var(--graphite-color)",
+        }}
       >
-        <div className="relative">
-          <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black leading-none block" style={{ color: "var(--primary-hex)" }}>
+        {/* Accent top line */}
+        <div
+          className="absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl"
+          style={{
+            background: "linear-gradient(90deg, var(--cta-hex), var(--secondary-hex))",
+          }}
+        />
+
+        <div className="mb-2">
+          <div
+            className="leading-none tracking-tight mb-2"
+            style={{
+              color: "var(--primary-hex)",
+              fontFamily: "var(--font-heading)",
+            }}
+          >
             <Counter value={value} suffix={suffix} />
-          </span>
-          <div className="mt-2 w-8 sm:w-12 h-0.5 rounded-full" style={{ background: "linear-gradient(90deg, var(--primary-hex), var(--secondary-hex))" }} />
+          </div>
+
+          <div
+            className="w-8 h-0.5 rounded-full"
+            style={{ background: "linear-gradient(90deg, var(--primary-hex), transparent)" }}
+          />
         </div>
-        <p className="text-[11px] sm:text-xs font-bold mt-3 leading-snug uppercase tracking-wider break-words" style={{ color: "var(--silver-color)" }}>
+
+        <p
+          className="text-xs font-bold leading-snug uppercase tracking-wider"
+          style={{ color: "var(--silver-color)" }}
+        >
           {label}
         </p>
       </motion.div>
@@ -277,7 +309,7 @@ export default function AboutSection() {
                 {coreValues.map((value: string) => (
                   <span
                     key={value}
-                    className="px-3 py-1.5 text-[11px] font-bold rounded-full uppercase tracking-wide"
+                    className="px-3 py-1.5 text-[11px] font-bold rounded-full uppercase tracking-wide whitespace-nowrap"
                     style={{ background: "rgba(var(--primary-rgb), 0.08)", color: "var(--primary-hex)", border: "1px solid rgba(var(--primary-rgb), 0.2)" }}
                   >
                     {value}
@@ -287,7 +319,7 @@ export default function AboutSection() {
             )}
 
             <motion.div variants={variants} custom={6} className="pt-2 w-full">
-              <div className="flex flex-row sm:flex-col md:flex-row flex-wrap items-center  gap-3 sm:gap-4 md:gap-4 w-full">
+              <div className="flex flex-row sm:flex-col md:flex-row flex-wrap items-center gap-3 sm:gap-4 md:gap-4 w-full">
                 {buttons.map((button: any, idx: number) =>
                   button.primary ? (
                     <motion.a
@@ -295,7 +327,7 @@ export default function AboutSection() {
                       href={button.href}
                       whileHover={{ scale: 1.03, y: -2 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300 shadow-xl"
+                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300 shadow-xl whitespace-nowrap"
                       style={{ background: "linear-gradient(135deg, var(--cta-hex), var(--secondary-hex))", color: "#FFFFFF", boxShadow: "0 8px 32px rgba(18, 54, 90, 0.4)" }}
                     >
                       <span
@@ -306,11 +338,11 @@ export default function AboutSection() {
             "
                       />
 
-                      <span className="relative z-10 flex items-center gap-2">
-                        {button.text}
+                      <span className="relative z-10 flex items-center gap-2 whitespace-nowrap">
+                        <span className="whitespace-nowrap">{button.text}</span>
 
                         <svg
-                          className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1"
+                          className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1 shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -330,7 +362,7 @@ export default function AboutSection() {
                       href={button.href}
                       whileHover={{ scale: 1.03, y: -2 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300"
+                      className="group relative overflow-hidden w-full sm:w-auto md:w-auto min-w-[180px] sm:min-w-[200px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-8 md:px-6 lg:px-8 py-3.5 sm:py-4 md:py-3.5 lg:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold text-sm sm:text-base transition-all duration-300 whitespace-nowrap"
                       style={{ background: "transparent", color: "var(--heading-color)", border: "2px solid var(--secondary-hex)" }}
                     >
                       <span
@@ -341,8 +373,8 @@ export default function AboutSection() {
             "
                       />
 
-                      <span className="relative z-10 flex items-center gap-2">
-                        {button.text}
+                      <span className="relative z-10 flex items-center gap-2 whitespace-nowrap">
+                        <span className="whitespace-nowrap">{button.text}</span>
 
                         <svg
                           className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:rotate-45"
@@ -369,8 +401,8 @@ export default function AboutSection() {
               custom={7}
               className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-8"
             >
-              {stats.map((stat: any) => (
-                <StatCard key={stat.label} {...stat} />
+              {stats.map((stat: any, index: number) => (
+                <StatCard key={stat.label} {...stat} index={index} />
               ))}
             </motion.div>
           </motion.div>

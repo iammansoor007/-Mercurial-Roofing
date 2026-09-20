@@ -291,19 +291,19 @@
     },
     "stats": [
       {
-        "value": "Sugar Hill",
-        "suffix": ", GA",
-        "label": "Headquarters"
+        "value": 5,
+        "suffix": " States",
+        "label": "Covered & Insured"
       },
       {
-        "value": "5 States",
-        "suffix": "",
-        "label": "Full Coverage"
-      },
-      {
-        "value": "100%",
-        "suffix": "",
+        "value": 100,
+        "suffix": "%",
         "label": "Workmanship Guaranteed"
+      },
+      {
+        "value": "24/7",
+        "suffix": "",
+        "label": "Emergency Dispatch"
       }
     ]
   },
@@ -516,7 +516,7 @@
     ],
     "cta": {
       "badge": "START YOUR PROJECT",
-      "title": "Ready to Put the Right Team <span class=\"text-primary\">on Your Roof?</span>",
+      "title": "Ready to Put the Right Team <span class=\"text-[var(--accent-hex)]\">on Your Roof?</span>",
       "description": "Whether you need a planned roof replacement, emergency leak repair, storm and hail claims, or seamless gutters, Mercurial Roofing LLC is ready to deploy across all 5 covered states.",
       "trustBadges": [
         "Fully Insured",
