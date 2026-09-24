@@ -1024,7 +1024,7 @@
         "label": "Planned Project"
       }
     ],
-    "email": "support@mercurialroofing.net",
+    "email": "support@mercurialroofing.vercel.app",
     "stages": [
       {
         "number": 1,
@@ -1222,9 +1222,9 @@
       "phone": "(470) 323-6048",
       "phoneLabel": "Direct Line & 24/7 Emergency",
       "phoneLink": "tel:+14703236048",
-      "email": "support@mercurialroofing.net",
+      "email": "support@mercurialroofing.vercel.app",
       "emailLabel": "Estimates & Inquiries",
-      "emailLink": "mailto:support@mercurialroofing.net",
+      "emailLink": "mailto:support@mercurialroofing.vercel.app",
       "hoursTitle": "Operating Schedule",
       "schedule": [
         {
@@ -1272,7 +1272,7 @@
       },
       {
         "label": "Email Dispatch",
-        "href": "mailto:support@mercurialroofing.net",
+        "href": "mailto:support@mercurialroofing.vercel.app",
         "icon": "Mail"
       },
       {
@@ -1338,7 +1338,7 @@
         "facebook": "#",
         "instagram": "#",
         "linkedin": "#",
-        "email": "support@mercurialroofing.net"
+        "email": "support@mercurialroofing.vercel.app"
       },
       "badges": {
         "top": "Fully Insured",

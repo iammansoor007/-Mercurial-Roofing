@@ -56,7 +56,7 @@ Fully Insured • Multi-State Coverage
 
         try {
             try {
-                const response = await fetch('https://formsubmit.co/ajax/support@mercurialroofing.net', {
+                const response = await fetch('https://formsubmit.co/ajax/support@mercurialroofing.vercel.app', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -82,13 +82,13 @@ Fully Insured • Multi-State Coverage
                 console.log('FormSubmit failed, using mailto fallback');
             }
 
-            const mailtoLink = `mailto:support@mercurialroofing.net?subject=🏗️ Inspection Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+              const mailtoLink = `mailto:support@mercurialroofing.vercel.app?subject=🏗️ Inspection Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
             window.location.href = mailtoLink;
             showSuccess();
 
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Please email us directly at support@mercurialroofing.net');
+              alert('Please email us directly at support@mercurialroofing.vercel.app');
         } finally {
             setIsSubmitting(false);
         }

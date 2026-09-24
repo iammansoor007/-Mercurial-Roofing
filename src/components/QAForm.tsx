@@ -769,7 +769,7 @@ Fully Insured • Multi-State Coverage
     try {
       try {
         const response = await fetch(
-          "https://formsubmit.co/ajax/support@mercurialroofing.net",
+          "https://formsubmit.co/ajax/support@mercurialroofing.vercel.app",
           {
             method: "POST",
             headers: {

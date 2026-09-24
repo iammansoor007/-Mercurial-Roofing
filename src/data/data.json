@@ -870,7 +870,7 @@
         "label": "Planned Project"
       }
     ],
-    "email": "support@mercurialroofing.net",
+    "email": "support@mercurialroofing.vercel.app",
     "success": {
       "title": "Inspection Request Received",
       "message": "Your project details have been sent to the Mercurial Roofing LLC dispatch team.",
@@ -941,7 +941,7 @@
     },
     "contact": {
       "title": "Contact",
-      "email": "support@mercurialroofing.net",
+      "email": "support@mercurialroofing.vercel.app",
       "phone": "+1 (470) 323-6048",
       "address": "Sugar Hill, GA 30518",
       "emergency": "24/7 Emergency: (470) 323-6048",
@@ -1000,7 +1000,7 @@
       {
         "platform": "Email",
         "icon": "Mail",
-        "href": "mailto:support@mercurialroofing.net"
+        "href": "mailto:support@mercurialroofing.vercel.app"
       },
       {
         "platform": "Phone",
@@ -1075,7 +1075,7 @@
         "facebook": "#",
         "instagram": "#",
         "linkedin": "#",
-        "email": "support@mercurialroofing.net"
+        "email": "support@mercurialroofing.vercel.app"
       },
       "badges": {
         "top": "Fully Insured",
